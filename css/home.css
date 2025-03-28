@@ -1,0 +1,147 @@
+/* 
+CSS for the Home Section 
+*/
+
+/* HOME 
+======================================================= */
+#home {
+    background: url("../assets/background.JPG") no-repeat center;
+    background-size: cover;
+    height: 800px;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* BANNER
+======================================================= */
+header .banner {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0 auto 18px auto;
+    outline: 0;
+    overflow: auto;
+    padding: 0;
+    padding-top: 15%;
+    width: 80%;
+}
+
+
+/* Name Banner */
+.banner h1 {
+    color: rgb(238, 238, 238);
+    font-size: 80px;
+    letter-spacing: 1px;
+    margin: 12px 18px 18px 18px;
+    margin-bottom: 24px;
+    padding: 16px;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.7);
+}
+
+
+.banner h3 {
+    color: rgb(242, 242, 242);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
+}
+
+
+/* NAVBAR
+======================================================= */
+#nav-wrap {
+    background: rgb(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
+    font: 16px 'opensans-bold', sans-serif;
+    height: 6px;
+    left: 0;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    min-height: 56px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* center the section links of the navbar */
+#nav {
+    left: 30%;
+    position: relative;
+}
+
+
+/* spacing between the section links in the navbar */
+#nav li {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/* Remove default bullet points of unordered lists */
+#nav-wrap ul {
+    list-style-type: none;
+    margin: 8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+/* Change hyperlink color, and remove underline */
+#nav-wrap li a {
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;
+}
+
+
+#nav-wrap li {
+    float: left;
+}
+
+
+#nav-wrap li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+
+/* change color when hovering over link */
+#nav-wrap li a:hover{
+    color: rgba(81, 154, 190, 0.6);
+}
+
+
+/* Navigation bar - Socials */
+#nav-wrap #socials {
+    list-style-type: none;
+    position: relative;
+    right: -56px;
+    top: -30px;
+}
+
+
+#nav-wrap #socials li {
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+#nav-wrap #socials li a {
+    color: rgb(213, 213, 213);
+    font-size: 30px;
+}
+
+
+/* Change color of socials when hovering over them */
+#nav-wrap #socials li a:hover {
+    color: rgb(86, 153, 220);
+}
+

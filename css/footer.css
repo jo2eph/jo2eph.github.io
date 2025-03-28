@@ -1,0 +1,49 @@
+/*
+CSS for Footer Section
+*/
+
+footer {
+    background: rgb(30, 30, 30);
+    color: rgb(148, 148, 148);
+    margin-bottom: 48px;
+    padding-top: 48px;
+    position: relative;
+}
+
+
+footer p {
+    margin-left: 30px;
+    width: 30%;
+    overflow: auto;
+}
+
+
+/* Change color of hyperlink to GitHub repo in footer */
+footer p a {
+    color: rgb(110, 174, 226);
+    text-decoration: none;
+}
+
+
+/* Footer - Socials */
+#socials {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+
+#socials {
+    list-style-type: none;
+}
+
+#socials li {
+    float: left;
+    margin: 16px;
+}
+
+
+#socials a {
+    color: rgb(140, 140, 140);
+    font-size: 36px;
+}

@@ -1,0 +1,49 @@
+/* REMOVE BROWSER DEFAULT SETTING */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: #000000;
+    font-family: 'opensans-regular', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+head {
+    display: none;
+}
+
+
+html {
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+
+/* Edit horizontal line breaks */
+hr {
+    height: 2px;
+    width: 100%;
+}
+
+
+/* Jump to Top Button */
+#jump-to-top {
+    border-radius: 100%;
+    color: rgba(37, 64, 123, 0.7);
+    font-size: 96px;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 100;
+}

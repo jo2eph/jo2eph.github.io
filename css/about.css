@@ -1,0 +1,79 @@
+/*
+CSS for About Section
+*/
+
+#about {
+    background: rgb(199, 224, 226);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Title of section: About Me */
+#section-name-about {
+    color: rgb(33, 33, 58);
+    font-size: 36px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+
+/* Profile pic */
+#profile-pic {
+    border-radius: 90%;
+    border: solid 0.5px black;
+    height: 360px;
+    margin-left: 48px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    width: 360px;
+}
+
+
+/* animation when hovering over profile picture */
+/* Credit for animation: https://webcode.tools/css-generator/keyframe-animation */
+#profile-pic:hover {
+    animation: profile-pic-anim 2s linear 0s 1 normal forwards;
+}
+
+
+@keyframes profile-pic-anim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+
+/* SUMMARY -- underneath profile picture */
+#summary {
+    font-size:18px;
+    left: 30px;
+    list-style-type: none;
+    margin: 16px;
+    padding: 8px;
+    position: relative;
+    max-width: 35%;
+}
