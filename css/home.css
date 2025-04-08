@@ -119,7 +119,7 @@ header .banner {
 
 
 /* Navigation bar - Socials */
-#nav-wrap #socials {
+#nav-wrap .socials {
     list-style-type: none;
     position: relative;
     right: -56px;
@@ -127,21 +127,21 @@ header .banner {
 }
 
 
-#nav-wrap #socials li {
+#nav-wrap .socials li {
     float: left;
     margin-left: 0px;
     margin-right: 0px;
 }
 
 
-#nav-wrap #socials li a {
+#nav-wrap .socials li a {
     color: rgb(213, 213, 213);
     font-size: 30px;
 }
 
 
 /* Change color of socials when hovering over them */
-#nav-wrap #socials li a:hover {
+#nav-wrap .socials li a:hover {
     color: rgb(86, 153, 220);
 }
 

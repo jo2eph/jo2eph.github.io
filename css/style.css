@@ -47,3 +47,10 @@ hr {
     bottom: 0px;
     z-index: 100;
 }
+
+
+/* TEMPORARY: WILL REMOVE LATER */
+.temp {
+    color: rgb(228, 0, 0);
+    text-shadow: none;
+}

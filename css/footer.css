@@ -26,24 +26,24 @@ footer p a {
 
 
 /* Footer - Socials */
-#socials {
+.socials {
     position: absolute;
     bottom: 5%;
     right: 5%;
 }
 
 
-#socials {
+.socials {
     list-style-type: none;
 }
 
-#socials li {
+.socials li {
     float: left;
     margin: 16px;
 }
 
 
-#socials a {
+.socials a {
     color: rgb(140, 140, 140);
     font-size: 36px;
 }

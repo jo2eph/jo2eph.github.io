@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- BASIC PAGE NEEDS
-    ====================================== -->
+    ============================================================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal Page">
@@ -10,25 +10,203 @@
 
     <title>Joseph Lee</title>
     
+
     <!-- CSS
-    ====================================== -->
+    ============================================================================ -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/about.css">
 
+    
     <!-- ICON
-    ====================================== -->
+    ============================================================================ -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
+    
     <!-- boxicons
-    ====================================== -->
+    ============================================================================ -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
 
+
+<!-- BODY OF PAGE
+============================================================================ -->
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- JUMP TO TOP BUTTON -->
+    <a href="#home" id="jump-to-top" title="Jump to top">
+        <i class="bx bxs-chevron-up-circle"> </i>
+    </a>
+
+
+    <!-- HOME SECTION 
+     ============================================================================ -->
+    <header id="home">
+
+        <!-- Navigation Menu Bar -->
+        <nav id="nav-wrap">
+
+            <!-- Page Sections -->
+            <ul id="nav">
+
+                <li id="nav-btn-home">
+                    <a href="#home">Home</a>
+                </li>
+
+                <li id="nav-btn-about">
+                    <a href="#about">About</a>
+                </li>
+
+                <li id="nav-btn-blog">
+                    <a href="#blog">Blog</a>
+                </li>
+
+                <li id="nav-btn-projects">
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li id="nav-btn-portfolio">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+                <!-- Socials -->
+                <li>
+                    <ul class="socials">
+                        <li><a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
+                                title="Send me an email"><i class="bx bxs-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/joseph-lee-243516242/" target="_blank"
+                                rel="noopener noreferrer" title="Connect with me on LinkedIn"><i
+                                    class="bx bxl-linkedin-square"></i></a></li>
+                        <li><a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
+                                title="Follow me on GitHub"><i class="bx bxl-github"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <div class="banner">
+
+            <h1 class="headline">Joseph Lee</h1>
+            <h3>
+                Lifelong and passionate learner, data scientist, programmer, web developer
+                <br>Welcome to my page!
+                <div class="temp">
+                    <br>This page is still under development
+                    <br>But feel free to visit!
+                </div>
+            </h3>
+
+        </div>
+
+    </header>
+
+    <hr>
+    
+
+    <!-- ABOUT 
+     ============================================================================ -->
+    <section id="about">
+
+        <h1 id="section-name-about">About Me</h1>
+        
+        <!-- Profile picture -->
+        <img id="profile-pic" src="assets/photo.jpg" alt="Profile Picture"/>
+
+        <ul id="summary">
+            
+            <li>
+                <b>Name:</b> 
+                Junhyuk (Joseph) Lee
+            </li>
+            
+            <li>
+                <b>School:</b> 
+                University of California, San Diego
+            </li>
+            
+            <li>
+                <b>Major:</b> 
+                B.S. Applied Mathematics
+            </li>
+
+        </ul>
+
+        <!-- About me section -->
+        <div id="about-me">
+            
+
+        </div>
+
+    </section>
+
+    <hr>
+    
+
+    <!-- BLOG
+     ============================================================================ -->
+    <section id="blog"></section>
+    
+    <hr>
+    
+
+    <!-- PROJECTS
+     ============================================================================ -->
+    <section id="projects"></section>
+    
+    <hr>
+    
+
+    <!-- PORTFOLIO
+     ============================================================================ -->
+    <section id="portfolio"></section>
+    
+    <hr>
+    
+
+    <!-- FOOTER 
+     ============================================================================ -->
+    <footer>
+
+        <!-- Left hand side of footer -->
+        <p>
+            Personal website by Joseph Lee
+            
+            <br>Hosted on GitHub Pages<br>
+            
+            Click <a href="https://github.com/jo2eph/jo2eph.github.io" title="GitHub Repo">here</a> 
+            for the GitHub repository forthis website
+        </p>
+        
+        <!-- Socials: Right hand side of footer -->
+        <ul class="socials">
+
+            <li>
+                <a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
+                    title="Send me an email">
+                    <i class="bx bxs-envelope"></i>
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.linkedin.com/in/joseph-lee-243516242/" target="_blank"
+                    rel="noopener noreferrer" title="Connect with me on LinkedIn">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
+                    title="Follow me on GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </li>
+
+        </ul>
+
+    </footer>
+
 </body>
 </html>
