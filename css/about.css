@@ -4,8 +4,8 @@ CSS for About Section
 
 #about {
     background: rgb(199, 224, 226);
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -79,7 +79,9 @@ CSS for About Section
 }
 
 
-/* SUMMARY -- underneath profile picture */
+/* 
+SUMMARY -- underneath profile picture 
+===================================================== */
 #summary {
     font-size:18px;
     left: 30px;
