@@ -20,25 +20,27 @@ CSS for About Section
 
 /* Profile pic */
 #profile-pic {
-    border-radius: 90%;
+    border-radius: 100%;
     border: solid 0.5px black;
-    height: 360px;
-    margin-left: 48px;
+    height: 23vw;
+    margin-left: 2%;
     object-fit: cover;
     overflow: hidden;
     position: relative;
-    width: 360px;
+    width: 23%;
 }
 
 
 /* About Me section*/
 #about #about-me {
+    border: 1px solid black;
+    display: flex;
     float: right;
     padding-bottom: 20px;
     padding-top: 20px;
     position: relative;
-    right: 60px;
-    bottom: 60px;
+    right: 3%;
+    bottom: 80%;
     width: 60%;
 }
 
@@ -84,10 +86,19 @@ SUMMARY -- underneath profile picture
 ===================================================== */
 #summary {
     font-size:18px;
-    left: 30px;
+    left: 0%;
     list-style-type: none;
     margin: 16px;
     padding: 8px;
     position: relative;
-    max-width: 35%;
+    max-width: 30%;
+}
+
+#summary {  /* border of summary */
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#summary:hover {
+    animation: profile-pic-anim 2s linear 0s 1 normal forwards;
 }

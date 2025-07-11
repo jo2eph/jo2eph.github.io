@@ -7,12 +7,12 @@ CSS for the Home Section
 #home {
     background: url("../assets/background.JPG") no-repeat center;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
     min-height: 500px;
     overflow: hidden;
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 
@@ -20,13 +20,11 @@ CSS for the Home Section
 ======================================================= */
 header .banner {
     background: transparent;
-    border: 0;
+    border: 0px;
     font-size: 100%;
     margin: 0 auto 18px auto;
-    outline: 0;
-    overflow: auto;
-    padding: 0;
-    padding-top: 15%;
+    outline: 0px;
+    padding-top: 35vh;
     width: 80%;
 }
 
@@ -34,7 +32,7 @@ header .banner {
 /* Name Banner */
 .banner h1 {
     color: rgb(238, 238, 238);
-    font-size: 80px;
+    font-size: 11vh;
     letter-spacing: 1px;
     margin: 12px 18px 18px 18px;
     margin-bottom: 24px;
@@ -45,6 +43,8 @@ header .banner {
 
 .banner h3 {
     color: rgb(242, 242, 242);
+    font-size: 2.3vh;
+    padding-top: 16px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
 }
 
@@ -52,25 +52,23 @@ header .banner {
 /* NAVBAR
 ======================================================= */
 #nav-wrap {
-    background: rgb(0, 0, 0, 0.7);
+    background: rgb(0, 0, 0, 0.75);
     box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
-    font: 16px 'opensans-bold', sans-serif;
-    height: 6px;
-    left: 0;
+    font: 2vh 'opensans-bold', sans-serif;
+    height: 5vh;
     letter-spacing: 1px;
     margin: 0 auto;
     min-height: 56px;
     overflow: hidden;
     position: fixed;
-    top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
 }
 
 
 /* center the section links of the navbar */
 #nav {
-    left: 30%;
+    left: 30vw;
     position: relative;
 }
 
@@ -104,7 +102,7 @@ header .banner {
 
 
 #nav-wrap li a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 12px;
@@ -114,34 +112,35 @@ header .banner {
 
 /* change color when hovering over link */
 #nav-wrap li a:hover{
-    color: rgba(81, 154, 190, 0.6);
+    color: rgba(128, 213, 255, 0.6);
 }
 
 
 /* Navigation bar - Socials */
 #nav-wrap .socials {
     list-style-type: none;
+    margin: 0px;
     position: relative;
-    right: -56px;
-    top: -30px;
+    right: -2vw;
+    top: -1vh;
 }
 
 
 #nav-wrap .socials li {
     float: left;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 
 #nav-wrap .socials li a {
     color: rgb(213, 213, 213);
-    font-size: 30px;
+    font-size: 3.5vh;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 /* Change color of socials when hovering over them */
 #nav-wrap .socials li a:hover {
-    color: rgb(86, 153, 220);
+    color: rgb(113, 175, 236);
 }
 
