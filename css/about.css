@@ -146,6 +146,14 @@ EDUCATION
     padding-bottom: 0.8vw;
 }
 
+#education img {
+    aspect-ratio: 1;
+    height: 7vw;
+    position: absolute;
+    left: 80vw;
+    bottom: 11vw;
+}
+
 
 /*
 SKILLS
