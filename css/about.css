@@ -4,6 +4,8 @@ CSS for About Section
 
 #about {
     background: rgb(199, 224, 226);
+    height: 82vw;
+    line-height: 0.5vw;
     margin: 0px;
     padding: 0px;
 }
@@ -12,7 +14,8 @@ CSS for About Section
 /* Title of section: About Me */
 #section-name-about {
     color: rgb(33, 33, 58);
-    font-size: 3.1vw;
+    font-size: 3.2vw;
+    margin-bottom: 2.6vw;
     padding-top: 3vw;
     text-align: center;
 }
@@ -36,7 +39,6 @@ CSS for About Section
 #profile-pic:hover {
     animation: profile-pic-anim 2s linear 0s 1 normal forwards;
 }
-
 
 @keyframes profile-pic-anim {
 	0% {
@@ -67,27 +69,60 @@ CSS for About Section
 }
 
 
+/*
+LINKS
+===================================================== */
+#links {
+    border: 0.4px solid black;
+    border-radius: 6px;
+    font-size: 1vw;
+    margin-bottom: 1.2vw;
+    padding: 1vw;
+    position: relative;
+    left: 4vw;
+    line-height: 1.8vw;
+    top: 2vw;
+    width: 20vw;
+}
+
+#links h3 {
+    font-size: 1.1vw;
+}
+
+#links ul {
+    list-style-type: none;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+
 /* 
 SUMMARY
 ===================================================== */
 #summary {
-    border: 0.5px solid black;
+    border: 0.6px solid black;
     border-radius: 10px;
-    background: url("");
     font-size: 1.2vw;
-    margin-bottom: 1.2vw;
+    height: 29vw;
+    margin-bottom: 1.1vw;
     padding: 1vw;
     position: relative;
     left: 28vw;
     line-height: 1.6vw;
-    bottom: 16vw;
-    width: 65vw;
+    bottom: 28vw;
+    width: 66vw;
 }
 
-
-#summary h3 {
-    font-size: 1.5vw;
+#summary p {
     padding-bottom: 0.8vw;
+}
+
+/* h3 for each of the subsections within About */
+#about h3 {
+    font-size: 2vw;
+    padding-bottom: 1.2vw;
 }
 
 
@@ -95,15 +130,39 @@ SUMMARY
 EDUCATION
 ===================================================== */
 #education {
-    border: 0.5px solid black;
+    border: 0.6px solid black;
     border-radius: 10px;
-    background: url("");
+    font-size: 1.2vw;
+    margin-bottom: 1.2vw;
+    padding: 1vw;
+    position: relative;
+    left: 4vw;
+    line-height: 1.8vw;
+    bottom: 26vw;
+    width: 90vw;
+}
+
+#education p {
+    padding-bottom: 0.8vw;
+}
+
+
+/*
+SKILLS
+===================================================== */
+#skills {
+    border: 0.6px solid black;
+    border-radius: 10px;
     font-size: 1.2vw;
     padding: 1vw;
     position: relative;
-    left: 28vw;
-    line-height: 1.6vw;
-    bottom: 16vw;
-    width: 65vw;
+    left: 4vw;
+    line-height: 1.8vw;
+    bottom: 24vw;
+    width: 90vw;
+}
+
+#skills p {
+    padding-bottom: 0.8vw;
 }
 
