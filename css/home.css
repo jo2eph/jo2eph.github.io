@@ -31,7 +31,6 @@ header .banner {
     top: 35vh;
 }
 
-
 /* Name Banner */
 .banner h1 {
     color: rgb(238, 238, 238);
@@ -41,7 +40,6 @@ header .banner {
     padding: 1vw;
     text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.7);
 }
-
 
 .banner h3 {
     color: rgb(242, 242, 242);
@@ -67,13 +65,11 @@ header .banner {
     z-index: 100;
 }
 
-
 /* center the section links of the navbar */
 #nav {
     left: 30vw;
     position: absolute;
 }
-
 
 /* spacing between the section links in the navbar */
 #nav li {
@@ -81,11 +77,9 @@ header .banner {
     padding-right: 16px;
 }
 
-
 #nav-wrap li {
     float: left;
 }
-
 
 /* Remove default bullet points of unordered lists */
 #nav-wrap ul {
@@ -95,13 +89,11 @@ header .banner {
     padding: 0;
 }
 
-
 /* Change hyperlink color, and remove underline */
 #nav-wrap li a {
     color: rgb(255, 255, 255);
     text-decoration-line: none;
 }
-
 
 #nav-wrap li a {
     display: flex;
@@ -110,7 +102,6 @@ header .banner {
     padding: 12px;
     text-decoration: none;
 }
-
 
 /* change color when hovering over link */
 #nav-wrap li a:hover{
@@ -127,11 +118,9 @@ header .banner {
     top: -1vh;
 }
 
-
 #nav-wrap .socials li {
     float: left;
 }
-
 
 #nav-wrap .socials li a {
     color: rgb(213, 213, 213);
@@ -139,7 +128,6 @@ header .banner {
     margin: 0px;
     padding: 0px;
 }
-
 
 /* Change color of socials when hovering over them */
 #nav-wrap .socials li a:hover {
@@ -152,13 +140,13 @@ SCROLL DOWN BUTTON
 ======================================================= */
 #scroll-down {
     aspect-ratio: 1;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.75);
     position: absolute;
-    top: 90vh;
+    top: 87vh;
     font-size: 10vh;
 }
 
 #scroll-down:hover {
-    color: rgba(188, 242, 255, 0.7);
+    color: rgba(188, 242, 255, 0.75);
 }
 

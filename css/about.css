@@ -4,7 +4,6 @@ CSS for About Section
 
 #about {
     background: rgb(199, 224, 226);
-    height: 82vw;
     line-height: 0.5vw;
     margin: 0px;
     padding: 0px;
@@ -16,7 +15,7 @@ CSS for About Section
     color: rgb(33, 33, 58);
     font-size: 3.2vw;
     margin-bottom: 2.6vw;
-    padding-top: 3vw;
+    padding-top: 4vw;
     text-align: center;
 }
 
@@ -25,14 +24,13 @@ CSS for About Section
 #profile-pic {
     aspect-ratio: 1;
     border-radius: 100%;
-    border: solid 0.5px black;
-    height: 18vw;
-    left: 5vw;
+    border: solid 0.8px black;
+    height: 17vw;
+    left: 7vw;
     object-fit: cover;
     overflow: hidden;
     position: relative;
 }
-
 
 /* animation when hovering over profile picture */
 /* Credit for animation: https://webcode.tools/css-generator/keyframe-animation */
@@ -73,15 +71,12 @@ CSS for About Section
 LINKS
 ===================================================== */
 #links {
-    border: 0.4px solid black;
-    border-radius: 6px;
-    font-size: 1vw;
-    margin-bottom: 1.2vw;
-    padding: 1vw;
+    font-size: 1.1vw;
+    margin-bottom: 1.1vw;
+    padding: 1.1vw;
     position: relative;
-    left: 4vw;
+    left: 5vw;
     line-height: 1.8vw;
-    top: 2vw;
     width: 20vw;
 }
 
@@ -94,6 +89,7 @@ LINKS
 }
 
 #links a {
+    color: rgb(64, 116, 162);
     text-decoration: none;
 }
 
@@ -105,23 +101,25 @@ SUMMARY
     border: 0.6px solid black;
     border-radius: 10px;
     font-size: 1.2vw;
-    height: 29vw;
-    margin-bottom: 1.1vw;
+    margin-bottom: 1vw;
     padding: 1vw;
     position: relative;
-    left: 28vw;
-    line-height: 1.6vw;
-    bottom: 28vw;
+    left: 26vw;
+    bottom: 30vw;
     width: 66vw;
 }
 
 #summary p {
+    font-size: 1.5vw;
+    line-height: 2.2vw;
     padding-bottom: 0.8vw;
 }
 
 /* h3 for each of the subsections within About */
 #about h3 {
     font-size: 2vw;
+    margin-bottom: 1vw;
+    padding-top: 1.2vw;
     padding-bottom: 1.2vw;
 }
 
@@ -132,26 +130,28 @@ EDUCATION
 #education {
     border: 0.6px solid black;
     border-radius: 10px;
-    font-size: 1.2vw;
     margin-bottom: 1.2vw;
     padding: 1vw;
     position: relative;
-    left: 4vw;
+    left: 6vw;
     line-height: 1.8vw;
-    bottom: 26vw;
-    width: 90vw;
+    bottom: 27vw;
+    width: 86vw;
 }
 
 #education p {
+    font-size: 1.5vw;
     padding-bottom: 0.8vw;
+    line-height: 2.5vw;
 }
 
+/* image of UCSD seal */
 #education img {
     aspect-ratio: 1;
     height: 7vw;
     position: absolute;
-    left: 80vw;
-    bottom: 11vw;
+    left: 72vw;
+    bottom: 19vw;
 }
 
 
@@ -164,13 +164,15 @@ SKILLS
     font-size: 1.2vw;
     padding: 1vw;
     position: relative;
-    left: 4vw;
+    left: 6vw;
     line-height: 1.8vw;
     bottom: 24vw;
-    width: 90vw;
+    width: 86vw;
 }
 
 #skills p {
+    font-size: 1.5vw;
+    line-height: 2.5vw;
     padding-bottom: 0.8vw;
 }
 
