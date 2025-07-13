@@ -146,3 +146,19 @@ header .banner {
     color: rgb(113, 175, 236);
 }
 
+
+/*
+SCROLL DOWN BUTTON
+======================================================= */
+#scroll-down {
+    aspect-ratio: 1;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 90vh;
+    font-size: 10vh;
+}
+
+#scroll-down:hover {
+    color: rgba(188, 242, 255, 0.7);
+}
+
