@@ -110,6 +110,11 @@ SUMMARY
     width: 66vw;
 }
 
+#summary a {
+    color: rgb(20, 83, 139);
+    text-decoration: none;
+}
+
 #summary p {
     font-size: 1.5vw;
     line-height: 2.2vw;
