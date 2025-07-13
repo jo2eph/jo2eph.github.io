@@ -12,36 +12,22 @@ CSS for About Section
 /* Title of section: About Me */
 #section-name-about {
     color: rgb(33, 33, 58);
-    font-size: 36px;
-    padding-top: 24px;
+    font-size: 3.1vw;
+    padding-top: 3vw;
     text-align: center;
 }
 
 
 /* Profile pic */
 #profile-pic {
+    aspect-ratio: 1;
     border-radius: 100%;
     border: solid 0.5px black;
-    height: 23vw;
-    margin-left: 2%;
+    height: 18vw;
+    left: 5vw;
     object-fit: cover;
     overflow: hidden;
     position: relative;
-    width: 23%;
-}
-
-
-/* About Me section*/
-#about #about-me {
-    border: 1px solid black;
-    display: flex;
-    float: right;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    position: relative;
-    right: 3%;
-    bottom: 80%;
-    width: 60%;
 }
 
 
@@ -82,23 +68,42 @@ CSS for About Section
 
 
 /* 
-SUMMARY -- underneath profile picture 
+SUMMARY
 ===================================================== */
 #summary {
-    font-size:18px;
-    left: 0%;
-    list-style-type: none;
-    margin: 16px;
-    padding: 8px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background: url("");
+    font-size: 1.2vw;
+    margin-bottom: 1.2vw;
+    padding: 1vw;
     position: relative;
-    max-width: 30%;
+    left: 28vw;
+    line-height: 1.6vw;
+    bottom: 16vw;
+    width: 65vw;
 }
 
-#summary {  /* border of summary */
-    border: 1px solid black;
-    border-radius: 20px;
+
+#summary h3 {
+    font-size: 1.5vw;
+    padding-bottom: 0.8vw;
 }
 
-#summary:hover {
-    animation: profile-pic-anim 2s linear 0s 1 normal forwards;
+
+/*
+EDUCATION
+===================================================== */
+#education {
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background: url("");
+    font-size: 1.2vw;
+    padding: 1vw;
+    position: relative;
+    left: 28vw;
+    line-height: 1.6vw;
+    bottom: 16vw;
+    width: 65vw;
 }
+
