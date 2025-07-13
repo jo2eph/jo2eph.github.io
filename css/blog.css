@@ -1,0 +1,20 @@
+/* 
+CSS for Blog Section
+*/
+
+#blog {
+    background-color: rgb(71, 71, 71);
+    height: 30vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Title of Section: Blog */
+#section-name-blog {
+    color: rgb(214, 214, 214);
+    font-size: 3.2vw;
+    margin-bottom: 2.6vw;
+    padding-top: 4vw;
+    text-align: center;
+}

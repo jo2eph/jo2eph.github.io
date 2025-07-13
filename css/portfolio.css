@@ -1,0 +1,20 @@
+/* 
+CSS for Portfolio Section
+*/
+
+#portfolio {
+    background-color: rgb(171, 137, 137);
+    height: 30vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Title of Section: Portfolio */
+#section-name-portfolio {
+    color: rgb(0, 0, 0);
+    font-size: 3.2vw;
+    margin-bottom: 2.6vw;
+    padding-top: 4vw;
+    text-align: center;
+}

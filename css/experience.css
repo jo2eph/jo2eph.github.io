@@ -1,0 +1,20 @@
+/* 
+CSS for Experience Section
+*/
+
+#experience {
+    background-color: rgb(185, 185, 185);
+    height: 30vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Title of Section: Experience */
+#section-name-experience {
+    color: rgb(23, 21, 21);
+    font-size: 3.2vw;
+    margin-bottom: 2.6vw;
+    padding-top: 4vw;
+    text-align: center;
+}
