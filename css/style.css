@@ -39,7 +39,7 @@ hr {
 /* Jump to Top Button */
 #jump-to-top {
     border-radius: 100%;
-    color: rgba(142, 154, 177, 0.8);
+    color: rgba(160, 179, 214, 0.8);
     font-size: 6vw;
     margin: 0px;
     padding: 0px;
@@ -47,6 +47,10 @@ hr {
     right: 0px;
     bottom: 0px;
     z-index: 100;
+}
+
+#jump-to-top:hover {
+    color: rgba(217, 230, 255, 0.8);
 }
 
 
