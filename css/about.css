@@ -10,7 +10,6 @@ ABOUT
 ======================================================= */
 #about {
     background-color: rgb(199, 224, 226);
-    height:           100vw;
     line-height:      0.5vw;
     margin:           0px;
     padding:          0px;
@@ -119,7 +118,7 @@ SUMMARY
 #summary {
     border:         0.6px solid black;
         border-radius:  10px;
-    font-size:      1.2vw;
+    font-size:      1.25vw;
     margin-bottom:  1vw;
     padding:        1vw;
     position:       relative;
@@ -142,7 +141,6 @@ Link: https://www.linkedin.com/in/jo2eph/
     text-decoration: underline;
 }
 
-/* */
 #summary p {
     font-size:      1.5vw;
     line-height:    2.2vw;
@@ -166,7 +164,7 @@ EDUCATION
 }
 
 #education p {
-    font-size:      1.5vw;
+    font-size:      1.56vw;
     line-height:    2.5vw;
     padding-bottom: 0.8vw;
 }
@@ -187,7 +185,7 @@ SKILLS
 #skills {
     border:         0.6px solid black;
     border-radius:  10px;
-    font-size:      1.2vw;
+    font-size:      1.56vw;
     padding:        1vw;
     position:       relative;
     left:           6vw;

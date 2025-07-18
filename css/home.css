@@ -109,14 +109,12 @@ NAVIGATION MENU
 /* Navigation bar - Socials */
 #nav-wrap .socials {
     list-style-type: none;
-    
 }
 
 #nav-wrap .socials li {
     float: left;
 }
 
-/* */
 #nav-wrap .socials li a {
     color:     rgb(213, 213, 213);
     font-size: 2vw;
@@ -138,7 +136,7 @@ SCROLL DOWN BUTTON
     color:        rgba(255, 255, 255, 0.75);
     position:     absolute;
     top:          87vh;
-    font-size:    10vh;
+    font-size:    max(10vh, 36px);
 }
 
 /* Change color of the scroll down button after hovering mouse over it */

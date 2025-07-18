@@ -1,16 +1,23 @@
+/*
+General CSS
+
+Author: Joseph Lee
+*/
+
+
 /* REMOVE BROWSER DEFAULT SETTING */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding:    0px;
+    margin:     0px;
     box-sizing: border-box;
 }
 
 
 body {
-    color: #000000;
+    color:       #000000;
     font-family: 'opensans-regular', sans-serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size:   16px;
     line-height: 30px;
 }
 
@@ -22,40 +29,34 @@ head {
 
 html {
     background-color: rgb(30, 30, 30);
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    scroll-behavior: smooth;
+    margin:           0;
+    padding:          0;
+    overflow:         auto;
+    scroll-behavior:  smooth;
 }
 
 
 /* Edit horizontal line breaks */
 hr {
     height: 1px;
-    width: 100%;
+    width:  100%;
 }
 
 
-/* Jump to Top Button */
+/* ====================================================
+JUMP TO TOP BUTTON
+======================================================= */
 #jump-to-top {
-    border-radius: 100%;
-    color: rgba(160, 179, 214, 0.8);
-    font-size: 6vw;
-    margin: 0px;
-    padding: 0px;
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    z-index: 100;
+    color:      rgba(148, 197, 204, 0.8);
+    font-size:  max(10vh, 36px);
+    position:   fixed;
+    right:      0px;
+    bottom:     0px;
+    z-index:    100;
 }
 
+/* Change Jump to Top button color when mouse is hovered over it */
 #jump-to-top:hover {
     color: rgba(217, 230, 255, 0.8);
 }
 
-
-/* TEMPORARY: WILL REMOVE LATER */
-.temp {
-    color: rgb(228, 0, 0);
-    text-shadow: none;
-}
