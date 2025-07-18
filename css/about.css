@@ -1,36 +1,54 @@
 /*
 CSS for About Section
+
+Author: Joseph Lee
 */
 
+
+/* ====================================================
+ABOUT 
+======================================================= */
 #about {
     background-color: rgb(199, 224, 226);
-    height: 100vw;
-    line-height: 0.5vw;
-    margin: 0px;
-    padding: 0px;
+    height:           100vw;
+    line-height:      0.5vw;
+    margin:           0px;
+    padding:          0px;
+}
+
+/* heading for each of the three main subsections in About section */
+#about h3 {
+    font-size:      2.3vw;
+    margin-bottom:  1vw;
+    padding-top:    1.2vw;
+    padding-bottom: 1.2vw;
 }
 
 
-/* Title of section: About Me */
+/* ====================================================
+TITLE OF SECTION: ABOUT
+======================================================= */
 #section-name-about {
-    color: rgb(33, 33, 58);
-    font-size: 3.2vw;
-    margin-bottom: 2.6vw;
-    padding-top: 4vw;
-    text-align: center;
+    color:          rgb(33, 33, 58);
+    font-size:      3.2vw;
+    margin-bottom:  2.6vw;
+    padding-top:    4vw;
+    text-align:     center;
 }
 
 
-/* PROFILE PICTURE */
+/* ====================================================
+PROFILE PICTURE 
+======================================================= */
 #profile-pic {
-    aspect-ratio: 1;
-    border-radius: 100%;
-    border: solid 0.8px black;
-    height: 17vw;
-    left: 6.5vw;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
+    aspect-ratio:   1;
+    border-radius:  100%;
+    border:         solid 0.8px black;
+    height:         17vw;
+    left:           6.5vw;
+    object-fit:     cover;
+    overflow:       hidden;
+    position:       relative;
 }
 
 /* animation when hovering over profile picture */
@@ -68,21 +86,21 @@ CSS for About Section
 }
 
 
-/*
-LINKS
+/* ==================================================
+LINKS SUBSECTION
 ===================================================== */
 #links {
-    font-size: 1.1vw;
-    margin-bottom: 1.1vw;
-    padding: 1.1vw;
-    position: relative;
-    left: 5vw;
-    line-height: 1.8vw;
-    width: 20vw;
+    font-size:      1.1vw;
+    margin-bottom:  1.1vw;
+    padding:        1.2vw;
+    position:       relative;
+    left:           5vw;
+    line-height:    1.8vw;
+    width:          20vw;
 }
 
 #links h3 {
-    font-size: 1.1vw;
+    font-size: 2vw;
 }
 
 #links ul {
@@ -90,95 +108,97 @@ LINKS
 }
 
 #links a {
-    color: rgb(64, 116, 162);
+    color:          rgb(64, 116, 162);
     text-decoration: none;
 }
 
 
-/* 
+/* ==================================================
 SUMMARY
 ===================================================== */
 #summary {
-    border: 0.6px solid black;
-    border-radius: 10px;
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
-    padding: 1vw;
-    position: relative;
-    left: 26vw;
-    bottom: 30vw;
-    width: 66vw;
+    border:         0.6px solid black;
+        border-radius:  10px;
+    font-size:      1.2vw;
+    margin-bottom:  1vw;
+    padding:        1vw;
+    position:       relative;
+        bottom:         30vw;
+        left:           26vw;
+    width:          66vw;
 }
 
+/* Hyperlink in summary section:
+Text: Junhyuk Lee
+Link: https://www.linkedin.com/in/jo2eph/
+*/
 #summary a {
-    color: rgb(20, 83, 139);
+    color:          rgb(20, 83, 139);
     text-decoration: none;
 }
 
+/* Underline hyperlink when hovering over it */
+#summary a:hover {
+    text-decoration: underline;
+}
+
+/* */
 #summary p {
-    font-size: 1.5vw;
-    line-height: 2.2vw;
+    font-size:      1.5vw;
+    line-height:    2.2vw;
     padding-bottom: 0.8vw;
 }
 
-/* h3 for each of the subsections within About */
-#about h3 {
-    font-size: 2vw;
-    margin-bottom: 1vw;
-    padding-top: 1.2vw;
-    padding-bottom: 1.2vw;
-}
 
-
-/*
+/* ==================================================
 EDUCATION
 ===================================================== */
 #education {
-    border: 0.6px solid black;
-    border-radius: 10px;
-    margin-bottom: 1.2vw;
-    padding: 1vw;
-    position: relative;
-    left: 6vw;
-    line-height: 1.8vw;
-    bottom: 27vw;
-    width: 86vw;
+    border:         0.6px solid black;
+        border-radius:  10px;
+    line-height:    1.8vw;
+    margin-bottom:  1.2vw;
+    padding:        1vw;
+    position:       relative;
+        bottom:         27vw;
+        left:           6vw;
+    width:          86vw;
 }
 
 #education p {
-    font-size: 1.5vw;
+    font-size:      1.5vw;
+    line-height:    2.5vw;
     padding-bottom: 0.8vw;
-    line-height: 2.5vw;
 }
 
 /* image of UCSD seal */
 #education img {
-    aspect-ratio: 1;
-    height: 7vw;
-    position: absolute;
-    left: 73vw;
-    bottom: 19vw;
+    aspect-ratio:   1;
+    height:         7vw;
+    position:       absolute;
+    left:           73vw;
+    bottom:         19vw;
 }
 
 
-/*
+/* ==================================================
 SKILLS
 ===================================================== */
 #skills {
-    border: 0.6px solid black;
-    border-radius: 10px;
-    font-size: 1.2vw;
-    padding: 1vw;
-    position: relative;
-    left: 6vw;
-    line-height: 1.8vw;
-    bottom: 24vw;
-    width: 86vw;
+    border:         0.6px solid black;
+    border-radius:  10px;
+    font-size:      1.2vw;
+    padding:        1vw;
+    position:       relative;
+    left:           6vw;
+    line-height:    1.8vw;
+    bottom:         24vw;
+    width:          86vw;
 }
 
 #skills p {
-    font-size: 1.5vw;
-    line-height: 2.5vw;
+    font-size:      1.5vw;
+    line-height:    2.5vw;
     padding-bottom: 0.8vw;
 }
 

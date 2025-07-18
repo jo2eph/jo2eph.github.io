@@ -1,49 +1,60 @@
 /*
 CSS for Footer Section
+
+Author: Joseph Lee
 */
 
+
+/* ====================================================
+FOOTER 
+======================================================= */
 footer {
-    background: rgb(30, 30, 30);
-    color: rgb(148, 148, 148);
-    margin-bottom: 48px;
-    padding-top: 48px;
-    position: relative;
+    background:     rgb(30, 30, 30);
+    color:          rgb(148, 148, 148);
+    margin-bottom:  48px;
+    padding-top:    48px;
+    position:       relative;
 }
 
 
 footer p {
     margin-left: 30px;
-    width: 30%;
-    overflow: auto;
+    width:       30%;
+    overflow:    auto;
 }
 
 
 /* Change color of hyperlink to GitHub repo in footer */
 footer p a {
-    color: rgb(110, 174, 226);
+    color:          rgb(110, 174, 226);
     text-decoration: none;
 }
 
 
-/* Footer - Socials */
-.socials {
+/* ====================================================
+FOOTER SOCIALS:
+Contains my socials and links and goes on the right
+hand side of footer
+======================================================= */
+footer .socials {
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom:   5%;
+    right:    5%;
 }
 
-
-.socials {
+/* Removes bullet point of list */
+footer .socials {
     list-style-type: none;
 }
 
-.socials li {
-    float: left;
+footer .socials li {
+    float:  left;
     margin: 16px;
 }
 
-
-.socials a {
-    color: rgb(140, 140, 140);
+/* Changes color */
+footer .socials a {
+    color:    rgb(140, 140, 140);
     font-size: 36px;
 }
+
