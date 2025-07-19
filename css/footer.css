@@ -63,6 +63,5 @@ footer .socials a {
 /* Changes color after hovering over icon */
 footer .socials a:hover {
     color:    rgb(213, 213, 213);
-    font-size: 36px;
 }
 
