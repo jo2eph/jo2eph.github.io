@@ -44,10 +44,10 @@ PROFILE PICTURE
     border-radius:  100%;
     border:         solid 0.8px black;
     height:         17vw;
-    left:           6.5vw;
     object-fit:     cover;
     overflow:       hidden;
     position:       relative;
+        left:           6.5vw;
 }
 
 /* animation when hovering over profile picture */

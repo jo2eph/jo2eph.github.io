@@ -17,10 +17,14 @@ footer {
 }
 
 
+/* ====================================================
+FOOTER Left Hand Side
+======================================================= */
 footer p {
+    font-size:   max(1.1vw, 12px);
     margin-left: 30px;
-    width:       30%;
     overflow:    auto;
+    width:       30%;
 }
 
 
@@ -32,13 +36,11 @@ footer p a {
 
 
 /* ====================================================
-FOOTER SOCIALS:
-Contains my socials and links and goes on the right
-hand side of footer
+FOOTER Right hand Side SOCIALS
 ======================================================= */
 footer .socials {
     position: absolute;
-    bottom:   5%;
+    bottom:   -5%;
     right:    5%;
 }
 
@@ -55,6 +57,12 @@ footer .socials li {
 /* Changes color */
 footer .socials a {
     color:    rgb(140, 140, 140);
+    font-size: max(2.4vw, 24px);
+}
+
+/* Changes color after hovering over icon */
+footer .socials a:hover {
+    color:    rgb(213, 213, 213);
     font-size: 36px;
 }
 
