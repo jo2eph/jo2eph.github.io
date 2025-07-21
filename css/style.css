@@ -55,6 +55,10 @@ JUMP TO TOP BUTTON
 
 /* Change Jump to Top button color when mouse is hovered over it */
 #jump-to-top:hover {
-    color: rgba(217, 230, 255, 0.8);
+    color:      rgba(217, 230, 255, 0.8);
+    transition: 320ms;
 }
 
+#jump-to-top:not(hover) {
+    transition: 320ms;
+}

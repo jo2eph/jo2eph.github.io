@@ -101,7 +101,12 @@ NAVIGATION MENU: Main
 
 /* change color when hovering over link */
 #nav-wrap li a:hover{
-    color: rgba(128, 213, 255, 0.6);
+    color:      rgba(128, 213, 255, 0.6);
+    transition: 350ms;
+}
+
+#nav-wrap li a:not(:hover) {
+    transition: 350ms;
 }
 
 
@@ -126,7 +131,13 @@ NAVIGATION MENU: SOCIALS
 
 /* Change color of socials when hovering over them */
 #nav-wrap .socials li a:hover {
-    color: rgb(113, 175, 236);
+    color:      rgb(113, 175, 236);
+    transition: 350ms;
+}
+
+/* Transition after moving mouse away from socials */
+#nav-wrap .socials li a:not(:hover) {
+    transition: 350ms;
 }
 
 
@@ -143,6 +154,11 @@ SCROLL DOWN BUTTON
 
 /* Change color of the scroll down button after hovering mouse over it */
 #scroll-down:hover {
-    color: rgba(188, 242, 255, 0.75);
+    color:      rgba(188, 242, 255, 0.75);
+    transition: 350ms;
+}
+
+#scroll-down:not(:hover) {
+    transition: 350ms;
 }
 

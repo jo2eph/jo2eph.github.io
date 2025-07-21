@@ -9,8 +9,10 @@ Author: Joseph Lee
 ABOUT 
 ======================================================= */
 #about {
-    background-color: rgb(199, 224, 226);
-    height:           118vw;
+    /* background:       url('../assets/'); */
+        background-color: rgb(199, 224, 226);
+        background-size:    cover;
+    height:           140vw;
     margin:           0px;
     padding:          0px;
 }
@@ -37,22 +39,34 @@ TITLE OF SECTION: ABOUT
 
 
 /* ====================================================
-PROFILE PICTURE 
+CARD 
 ======================================================= */
-#profile-pic {
+#card {
+    background: rgb(235, 235, 235);
+    border:     0.5px solid black;
+        border-radius: 15px;
+    width:      22vw;
+    padding:    2vw;
+    position:   relative;
+        left:   4vw;
+        bottom: 1vw;
+}
+
+/* PROFILE PICTURE */
+#card #profile-pic {
     aspect-ratio:   1;
-    border-radius:  100%;
     border:         solid 0.8px black;
+        border-radius:  100%;
     height:         17vw;
     object-fit:     cover;
-    overflow:       hidden;
+    /* overflow:       hidden;
     position:       relative;
-        left:           6.5vw;
+        left:           6.5vw; */
 }
 
 /* animation when hovering over profile picture */
 /* Credit for animation: https://webcode.tools/css-generator/keyframe-animation */
-#profile-pic:hover {
+#card #profile-pic:hover {
     animation: profile-pic-anim 2s linear 0s 1 normal forwards;
 }
 
@@ -84,31 +98,32 @@ PROFILE PICTURE
 	}
 }
 
-
-/* ==================================================
-LINKS SUBSECTION
-===================================================== */
-#links {
+/* Links */
+#card #links {
     font-size:      1.1vw;
-    margin-bottom:  1.1vw;
-    padding:        1.2vw;
-    position:       relative;
-    left:           5vw;
+    /* margin-bottom:  1.1vw; */
+    /* padding:        1.2vw; */
+    /* position:       relative;
+        left:           5vw; */
     line-height:    1.8vw;
-    width:          20vw;
+    /* width:          20vw; */
 }
 
-#links h3 {
+#card #links h3 {
     font-size: 2vw;
 }
 
-#links ul {
+#card #links ul {
     list-style-type: none;
 }
 
-#links a {
+#card #links ul a {
     color:          rgb(64, 116, 162);
     text-decoration: none;
+}
+
+#card #links a:hover {
+    text-decoration: underline;
 }
 
 
@@ -116,20 +131,28 @@ LINKS SUBSECTION
 SUMMARY
 ===================================================== */
 #summary {
-    border:         0.6px solid black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border:           0.6px solid black;
         border-radius:  10px;
-    font-size:      1.25vw;
-    margin-bottom:  1vw;
-    padding:        1vw;
-    position:       relative;
-        bottom:         30vw;
-        left:           26vw;
-    width:          66vw;
+    box-shadow:       1px 1px 1px 0px rgba(0, 0, 0, 0.6);
+    margin-bottom:    0.8vw;
+    margin-left:      1vw;
+    padding:          1.5vw;
+    position:         relative;
+        bottom:         33vw;
+        left:           28vw;
+    width:            62vw;
+}
+
+#summary p {
+    font-size:      1.6vw;
+    line-height:    2.2vw;
+    padding-bottom: 0.8vw;
 }
 
 /* Hyperlink in summary section:
-Text: Junhyuk Lee
-Link: https://www.linkedin.com/in/jo2eph/
+    Text: Junhyuk Lee
+    Link: https://www.linkedin.com/in/jo2eph/
 */
 #summary a {
     color:          rgb(20, 83, 139);
@@ -141,61 +164,79 @@ Link: https://www.linkedin.com/in/jo2eph/
     text-decoration: underline;
 }
 
-#summary p {
-    font-size:      1.5vw;
-    line-height:    2.2vw;
-    padding-bottom: 0.8vw;
-}
-
 
 /* ==================================================
 EDUCATION
 ===================================================== */
 #education {
-    border:         0.6px solid black;
-        border-radius:  10px;
-    line-height:    1.8vw;
-    margin-bottom:  1.2vw;
-    padding:        1vw;
-    position:       relative;
-        bottom:         27vw;
-        left:           6vw;
-    width:          86vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    border:           0.6px solid black;
+        border-radius:    10px;
+    height:           40vw;
+    margin-bottom:    1vw;
+    padding:          1.6vw;
+    position:         relative;
+        bottom:           30vw;
+        left:             7vw;
+    width:            84vw;
 }
 
 #education p {
-    font-size:      1.56vw;
+    font-size:      1.6vw;
     line-height:    2.5vw;
     padding-bottom: 0.8vw;
 }
 
-/* image of UCSD seal */
+/* Image of UCSD seal */
 #education img {
     aspect-ratio:   1;
     height:         7vw;
     position:       absolute;
-    left:           73vw;
-    bottom:         19vw;
+        left:           73vw;
+        top:            3vw;
 }
+
+/* Courses column 1 */
+#education-courses-col-1 {
+    font-size: 1.5vw;
+    position: relative;
+        left: 1vw;
+}
+
+/* Courses column 2 */
+#education-courses-col-2 {
+    font-size: 1.5vw;
+    position:  relative;
+        bottom: 10.5vw;
+        left:   25vw;
+}
+
+/* Courses column 3 */
+#education-courses-col-3 {
+    font-size: 1.5vw;
+    position:  relative;
+        bottom: 20.6vw;
+        left:   56vw;
+}
+
 
 
 /* ==================================================
 SKILLS
 ===================================================== */
 #skills {
-    border:         0.6px solid black;
-    border-radius:  10px;
-    font-size:      1.56vw;
-    padding:        1vw;
-    position:       relative;
-    left:           6vw;
-    line-height:    1.8vw;
-    bottom:         24vw;
-    width:          86vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    border:           0.6px solid black;
+        border-radius:    10px;
+    padding:          1.5vw;
+    position:         relative;
+        bottom:           27vw;
+        left:             7vw;
+    width:            84vw;
 }
 
 #skills p {
-    font-size:      1.5vw;
+    font-size:      1.6vw;
     line-height:    2.5vw;
     padding-bottom: 0.8vw;
 }
