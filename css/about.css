@@ -45,6 +45,7 @@ CARD
     background: rgb(235, 235, 235);
     border:     0.5px solid black;
         border-radius: 15px;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.6);
     width:      22vw;
     padding:    2vw;
     position:   relative;
@@ -106,7 +107,6 @@ CARD
     /* position:       relative;
         left:           5vw; */
     line-height:    1.8vw;
-    /* width:          20vw; */
 }
 
 #card #links h3 {
@@ -172,6 +172,7 @@ EDUCATION
     background-color: rgba(255, 255, 255, 0.7);
     border:           0.6px solid black;
         border-radius:    10px;
+    box-shadow:       1px 1px 1px 0px rgba(0, 0, 0, 0.6);
     height:           40vw;
     margin-bottom:    1vw;
     padding:          1.6vw;
@@ -196,30 +197,32 @@ EDUCATION
         top:            3vw;
 }
 
-/* Courses column 1 */
-#education-courses-col-1 {
-    font-size: 1.5vw;
-    position: relative;
-        left: 2vw;
-    width:    20vw;
+/* Relevant courses */
+#education #education-courses {
+    margin:       0 1vw 0;
+    padding-left: 0.5vw;
 }
 
-/* Courses column 2 */
-#education-courses-col-2 {
-    font-size: 1.5vw;
-    position:  relative;
-        bottom: 10.5vw;
-        left:   26vw;
-    width:    26vw;
-}
-
-/* Courses column 3 */
+/* Font size for the three columns */
+#education-courses-col-1, 
+#education-courses-col-2,
 #education-courses-col-3 {
-    font-size: 1.5vw;
-    position:  relative;
-        bottom: 20.6vw;
-        left:   57vw;
-    width:    23vw;
+    font-size:   1.5vw;
+}
+
+#education-courses-col-1 {
+    margin-left: 0.5vw;
+    width:       18vw;
+}
+
+#education-courses-col-2 {
+    margin-left: 3vw;
+    width:       26vw;
+}
+
+#education-courses-col-3 {
+    margin-left: 3vw;
+    width:       24vw;
 }
 
 
@@ -231,6 +234,7 @@ SKILLS
     background-color: rgba(255, 255, 255, 0.7);
     border:           0.6px solid black;
         border-radius:    10px;
+    box-shadow:       1px 1px 1px 0px rgba(0, 0, 0, 0.6);
     padding:          1.5vw;
     position:         relative;
         bottom:           27vw;
