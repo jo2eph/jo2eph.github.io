@@ -10,9 +10,9 @@ PORTFOLIO
 ======================================================= */
 #portfolio {
     background-color: rgb(171, 137, 137);
-    height:             30vw;
-    margin:             0px;
-    padding:            0px;
+    height: 30vw;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -20,9 +20,9 @@ PORTFOLIO
 TITLE OF SECTION: PORTFOLIO
 ======================================================= */
 #section-name-portfolio {
-    color:          rgb(0, 0, 0);
-    font-size:      3.2vw;
-    margin-bottom:  2.6vw;
-    padding-top:    4vw;
-    text-align:     center;
+    color: rgb(0, 0, 0);
+    font-size: 3.2vw;
+    margin-bottom: 2.6vw;
+    padding-top: 4vw;
+    text-align: center;
 }

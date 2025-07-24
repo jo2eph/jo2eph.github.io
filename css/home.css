@@ -9,11 +9,11 @@ Author: Joseph Lee
 HOME 
 ======================================================= */
 #home {
-    background:      url("../assets/background.JPG") no-repeat center;
-        background-size: cover;
-    height:          100vh;
-    text-align:      center;
-    width:           100vw;
+ background: url("../assets/background.JPG") no-repeat center;
+ background-size: cover;
+ height: 100vh;
+ text-align: center;
+ width: 100vw;
 }
 
 
@@ -21,30 +21,30 @@ HOME
 BANNER
 ======================================================= */
 header .banner {
-    position:   absolute;
+    position: absolute;
     text-align: center;
-    top:        36vh;
-    width:      100vw;
+    top: 36vh;
+    width: 100vw;
 }
 
 /* Name title: Joseph Lee */
 .banner h1 {
-    color:          rgb(238, 238, 238);
-    font-size:      max(7vw, 64px);
+    color: rgb(238, 238, 238);
+    font-size: max(7vw, 64px);
     letter-spacing: 2px;
-    margin-bottom:  1vw;
-    padding:        0.5vw;
-    text-shadow:    1px 2px 2px rgb(0, 0, 0, 0.7);
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.7);
 }
 
-/* Subtitle beneath name title */
+/* Subtitle beneath name */
 .banner h3 {
-    color:          rgb(242, 242, 242);
-    font-size:      max(1.6vw, 18px);
+    color: rgb(242, 242, 242);
+    font-size: max(1.6vw, 18px);
     letter-spacing: 1px;
-    margin:         1vw;
-    overflow:       auto;
-    text-shadow:    1px 1px 2px rgb(0, 0, 0, 0.7);
+    margin: 1vw;
+    overflow: auto;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
 }
 
 
@@ -52,26 +52,26 @@ header .banner {
 NAVIGATION MENU: Main
 ======================================================= */
 #home #nav-wrap {
-    background:     rgb(0, 0, 0, 0.75);
-    box-shadow:     1px 1px 2px rgb(0, 0, 0, 0.7);
-    font:           1.15vw 'opensans-bold', sans-serif;
-    height:         4.6vw;
+    background: rgb(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
+    font: 1.15vw 'opensans-bold', sans-serif;
+    height: 4.6vw;
     letter-spacing: 1px;
-    min-height:     36px;
-    position:       fixed;
-    width:          100vw;
-    z-index:        100;
+    min-height: 36px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
 }
 
 /* center the section links of the navbar */
 #nav-wrap #nav {
-    left:     27vw;
+    left: 27vw;
     position: absolute;
 }
 
 /* spacing between the section links in the navbar */
 #nav-wrap #nav li {
-    padding-left:  1.4vw;
+    padding-left: 1.4vw;
     padding-right: 1.4vw;
 }
 
@@ -82,26 +82,26 @@ NAVIGATION MENU: Main
 /* Remove default bullet points of unordered lists */
 #nav-wrap ul {
     list-style-type: none;
-    margin-top:      1.2vh;
-    padding:         0px;
+    margin-top: 1.2vh;
+    padding: 0px;
 }
 
 /* Change hyperlink color, and remove underline */
 #nav-wrap li a {
-    color:              rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-decoration-line: none;
 }
 
 #nav-wrap li a {
-    display:         flex;
-    color:          white;
-    padding:         0.8vw;
+    display: flex;
+    color: white;
+    padding: 0.8vw;
     text-decoration: none;
 }
 
 /* change color when hovering over link */
 #nav-wrap li a:hover{
-    color:      rgba(128, 213, 255, 0.6);
+    color: rgba(128, 213, 255, 0.6);
     transition: 350ms;
 }
 
@@ -122,16 +122,16 @@ NAVIGATION MENU: SOCIALS
 }
 
 #nav-wrap .socials li a {
-    color:     rgb(213, 213, 213);
+    color: rgb(213, 213, 213);
     font-size: 1.8vw;
-    position:  relative;
-        bottom:    1.4vh;
-        left:      1.6vw;
+    position: relative;
+    bottom: 1.4vh;
+    left: 1.6vw;
 }
 
 /* Change color of socials when hovering over them */
 #nav-wrap .socials li a:hover {
-    color:      rgb(113, 175, 236);
+    color: rgb(113, 175, 236);
     transition: 350ms;
 }
 
@@ -146,19 +146,18 @@ SCROLL DOWN BUTTON
 ======================================================= */
 #scroll-down {
     aspect-ratio: 1;
-    color:        rgba(255, 255, 255, 0.75);
-    position:     absolute;
-    top:          87vh;
-    font-size:    max(10vh, 36px);
+    color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    top: 87vh;
+    font-size: max(10vh, 36px);
 }
 
 /* Change color of the scroll down button after hovering mouse over it */
 #scroll-down:hover {
-    color:      rgba(188, 242, 255, 0.75);
+    color: rgba(188, 242, 255, 0.75);
     transition: 350ms;
 }
 
 #scroll-down:not(:hover) {
-    transition: 350ms;
+     transition: 350ms;
 }
-
