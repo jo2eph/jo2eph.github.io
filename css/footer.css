@@ -1,12 +1,9 @@
 /*
 CSS for Footer Section
-
-Author: Joseph Lee
 */
 
 
-/* ====================================================
-FOOTER 
+/* FOOTER 
 ======================================================= */
 footer {
     background:     rgb(30, 30, 30);
@@ -17,8 +14,7 @@ footer {
 }
 
 
-/* ====================================================
-FOOTER Left Hand Side
+/* FOOTER Left Hand Side
 ======================================================= */
 footer p {
     font-size:   max(1.1vw, 12px);
@@ -27,7 +23,6 @@ footer p {
     width:       30%;
 }
 
-
 /* Change color of hyperlink to GitHub repo in footer */
 footer p a {
     color:          rgb(110, 174, 226);
@@ -35,8 +30,7 @@ footer p a {
 }
 
 
-/* ====================================================
-FOOTER Right hand Side SOCIALS
+/* FOOTER Right hand Side SOCIALS
 ======================================================= */
 footer .socials {
     position: absolute;

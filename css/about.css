@@ -1,12 +1,9 @@
 /*
 CSS for About Section
-
-Author: Joseph Lee
 */
 
 
-/* ====================================================
-ABOUT 
+/* ABOUT 
 ======================================================= */
 #about {
     background-color: rgb(199, 224, 226);
@@ -16,7 +13,6 @@ ABOUT
     padding: 0px;
 }
 
-/* heading for each of the three main subsections */
 #about h3 {
     font-size: 2.3vw;
     margin-bottom: 1vw;
@@ -24,10 +20,6 @@ ABOUT
     padding-bottom: 1.2vw;
 }
 
-
-/* ====================================================
-TITLE OF SECTION: ABOUT
-======================================================= */
 #section-name-about {
     color: rgb(33, 33, 58);
     font-size: 3.2vw;
@@ -37,8 +29,7 @@ TITLE OF SECTION: ABOUT
 }
 
 
-/* ====================================================
-CARD 
+/* CARD 
 ======================================================= */
 #card {
     background: rgb(235, 235, 235);
@@ -52,7 +43,6 @@ CARD
     bottom: 1vw;
 }
 
-/* PROFILE PICTURE */
 #card #profile-pic {
     aspect-ratio: 1;
     border: solid 0.8px black;
@@ -62,9 +52,9 @@ CARD
 }
 
 /* animation when hovering over profile picture */
-/* Credit for animation: https://webcode.tools/css-generator/keyframe-animation */
+/* Credit: https://webcode.tools/css-generator/keyframe-animation */
 #card #profile-pic:hover {
-    animation: profile-pic-anim 2s linear 0s 1 normal forwards;
+    animation: profile-pic-anim 2.5s linear 0s 1 normal forwards;
 }
 
 @keyframes profile-pic-anim {
@@ -95,13 +85,8 @@ CARD
 	}
 }
 
-/* Links */
 #card #links {
     font-size: 1.1vw;
-    /* margin-bottom: 1.1vw; */
-    /* padding: 1.2vw; */
-    /* position: relative;
-    left: 5vw; */
     line-height: 1.8vw;
 }
 
@@ -123,8 +108,7 @@ CARD
 }
 
 
-/* ==================================================
-SUMMARY
+/* SUMMARY
 ===================================================== */
 #summary {
     background-color: rgba(255, 255, 255, 0.7);
@@ -146,23 +130,18 @@ SUMMARY
     padding-bottom: 0.8vw;
 }
 
-/* Hyperlink in summary section:
- Text: Junhyuk Lee
- Link: https://www.linkedin.com/in/jo2eph/
-*/
 #summary a {
     color: rgb(20, 83, 139);
     text-decoration: none;
 }
 
-/* Underline hyperlink when hovering over it */
 #summary a:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
 
-/* ==================================================
-EDUCATION
+/* EDUCATION
 ===================================================== */
 #education {
     background-color: rgba(255, 255, 255, 0.7);
@@ -188,12 +167,10 @@ EDUCATION
     padding-right: 0.5vw;
 }
 
-/* Adjustment for club portion */
 #education #clubs-list {
      margin-left: 1vw;
 }
 
-/* Image of UCSD seal */
 #education img {
     aspect-ratio: 1;
     height: 7vw;
@@ -202,13 +179,11 @@ EDUCATION
     top: 3vw;
 }
 
-/* Relevant courses */
 #education #education-courses {
     margin: 0 1vw 0;
     padding-left: 0.5vw;
 }
 
-/* Font size for the three columns */
 #education-courses-col-1, 
 #education-courses-col-2,
 #education-courses-col-3 {
@@ -234,8 +209,7 @@ EDUCATION
 }
 
 
-/* ==================================================
-SKILLS
+/* SKILLS
 ===================================================== */
 #skills {
     background-color: rgba(255, 255, 255, 0.7);
@@ -254,4 +228,3 @@ SKILLS
     line-height: 2.5vw;
     padding-bottom: 0.8vw;
 }
-

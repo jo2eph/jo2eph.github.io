@@ -1,12 +1,9 @@
 /* 
 CSS for Home Section 
-
-Author: Joseph Lee
 */
 
 
-/* ====================================================
-HOME 
+/* HOME 
 ======================================================= */
 #home {
  background: url("../assets/background.JPG") no-repeat center;
@@ -17,8 +14,7 @@ HOME
 }
 
 
-/* ====================================================
-BANNER
+/* BANNER
 ======================================================= */
 header .banner {
     position: absolute;
@@ -48,8 +44,7 @@ header .banner {
 }
 
 
-/* ====================================================
-NAVIGATION MENU: Main
+/* NAVIGATION MENU: Main
 ======================================================= */
 #home #nav-wrap {
     background: rgb(0, 0, 0, 0.75);
@@ -110,8 +105,7 @@ NAVIGATION MENU: Main
 }
 
 
-/* ====================================================
-NAVIGATION MENU: SOCIALS
+/* NAVIGATION MENU: SOCIALS
 ======================================================= */
 #nav-wrap .socials {
     list-style-type: none;

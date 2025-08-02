@@ -1,7 +1,5 @@
 /*
 General CSS
-
-Author: Joseph Lee
 */
 
 
@@ -12,18 +10,15 @@ Author: Joseph Lee
     box-sizing: border-box;
 }
 
-
 body {
     color:       #000000;
     font-family: 'opensans-regular', sans-serif;
     font-weight: normal;
 }
 
-
 head {
     display: none;
 }
-
 
 html {
     background-color: rgb(30, 30, 30);
@@ -33,16 +28,13 @@ html {
     scroll-behavior:  smooth;
 }
 
-
 /* Edit horizontal line breaks */
 hr {
     height: 1px;
     width:  100%;
 }
 
-
-/* ====================================================
-JUMP TO TOP BUTTON
+/* JUMP TO TOP BUTTON
 ======================================================= */
 #jump-to-top {
     color:      rgba(148, 197, 204, 0.8);

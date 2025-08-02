@@ -1,12 +1,8 @@
 /* 
 CSS for Portfolio Section
-
-Author: Joseph Lee
 */
 
-
-/* ====================================================
-PORTFOLIO
+/* PORTFOLIO
 ======================================================= */
 #portfolio {
     background-color: rgb(171, 137, 137);
@@ -15,10 +11,6 @@ PORTFOLIO
     padding: 0px;
 }
 
-
-/* ====================================================
-TITLE OF SECTION: PORTFOLIO
-======================================================= */
 #section-name-portfolio {
     color: rgb(0, 0, 0);
     font-size: 3.2vw;

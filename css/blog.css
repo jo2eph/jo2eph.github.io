@@ -1,7 +1,5 @@
 /* 
 CSS for Blog Section
-
-Author: Joseph Lee
 */
 
 #blog {
@@ -11,8 +9,6 @@ Author: Joseph Lee
     padding: 0px;
 }
 
-
-/* Title of Section: Blog */
 #section-name-blog {
     color: rgb(214, 214, 214);
     font-size: 3.2vw;

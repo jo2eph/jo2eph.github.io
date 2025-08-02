@@ -1,7 +1,5 @@
 /* 
 CSS for Experience Section
-
-Author: Joseph Lee
 */
 
 
@@ -12,8 +10,6 @@ Author: Joseph Lee
     padding: 0px;
 }
 
-
-/* Title of Section: Experience */
 #section-name-experience {
     color: rgb(23, 21, 21);
     font-size: 3.2vw;
