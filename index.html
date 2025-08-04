@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
 	<meta name="author" content="Joseph Lee">
     <meta name="description" content="Personal Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +28,7 @@
     <!-- Others
     ============================================================================ -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 
@@ -41,8 +42,8 @@
     <nav id="nav-container">
 
         <div id="logo">
-            <a href="https://jo2eph.github.io/" id="logo-text">
-                JL
+            <a href="https://jo2eph.github.io/" id="logo-icon" title="Home page">
+                <i class='bx bxs-home' ></i>
             </a>
         </div>
 
@@ -100,6 +101,20 @@
                 </a>
             </li>
         </ul>
+
+        <!-- MENU FOR PHONE DEVICES -->
+        <div id="mobile-menu" onclick="displayMenu()">
+            <i class='bx bx-menu'></i>
+
+            <div id="mobile-menu-1">
+
+            </div>
+
+            <div id="mobile-menu-2">
+                
+            </div>
+
+        </div>
         
     </nav>
 
@@ -108,7 +123,7 @@
     <header id="home">
 
         <!-- Banner -->
-        <div class="banner">
+        <div id="banner">
 
             <h1>
                 Joseph Lee

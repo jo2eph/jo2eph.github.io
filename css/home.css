@@ -18,14 +18,13 @@ CSS for Home Section
 
 /* BANNER
 ======================================== */
-header .banner {
+header #banner {
     position: absolute;
-    text-align: center;
-    top: 36vh;
+    top: 15em;
     width: 100vw;
 }
 
-.banner h1 {
+#banner h1 {
     color: rgb(238, 238, 238);
     font-size: max(7vw, 64px);
     letter-spacing: 2px;
@@ -34,7 +33,7 @@ header .banner {
     text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.7);
 }
 
-.banner h3 {
+#banner h3 {
     color: rgb(242, 242, 242);
     font-size: max(1.6vw, 18px);
     letter-spacing: 1px;

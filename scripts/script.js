@@ -23,3 +23,9 @@ window.addEventListener('scroll', (event) => {
         jumpToTopButton.style.display = "none";
     }
 });
+
+
+// Display menu on phone devices
+displayMenu = function() {
+    console.log("Hello world");
+}
