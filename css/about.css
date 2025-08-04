@@ -8,7 +8,7 @@ CSS for About Section
 #about {
     background-color: rgb(199, 224, 226);
     background-size: cover;
-    height: 140vw;
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }

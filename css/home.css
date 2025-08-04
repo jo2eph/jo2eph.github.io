@@ -4,18 +4,20 @@ CSS for Home Section
 
 
 /* HOME 
-======================================================= */
+======================================== */
 #home {
- background: url("../assets/background.JPG") no-repeat center;
- background-size: cover;
- height: 100vh;
- text-align: center;
- width: 100vw;
+    background-image: url("../assets/background.JPG");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    text-align: center;
+    width: 100vw;
 }
 
-
 /* BANNER
-======================================================= */
+======================================== */
 header .banner {
     position: absolute;
     text-align: center;
@@ -23,7 +25,6 @@ header .banner {
     width: 100vw;
 }
 
-/* Name title: Joseph Lee */
 .banner h1 {
     color: rgb(238, 238, 238);
     font-size: max(7vw, 64px);
@@ -33,7 +34,6 @@ header .banner {
     text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.7);
 }
 
-/* Subtitle beneath name */
 .banner h3 {
     color: rgb(242, 242, 242);
     font-size: max(1.6vw, 18px);
@@ -43,101 +43,8 @@ header .banner {
     text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
 }
 
-
-/* NAVIGATION MENU: Main
-======================================================= */
-#home #nav-wrap {
-    background: rgb(0, 0, 0, 0.75);
-    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
-    font: 1.15vw 'opensans-bold', sans-serif;
-    height: 4.6vw;
-    letter-spacing: 1px;
-    min-height: 36px;
-    position: fixed;
-    width: 100vw;
-    z-index: 100;
-}
-
-/* center the section links of the navbar */
-#nav-wrap #nav {
-    left: 27vw;
-    position: absolute;
-}
-
-/* spacing between the section links in the navbar */
-#nav-wrap #nav li {
-    padding-left: 1.4vw;
-    padding-right: 1.4vw;
-}
-
-#nav-wrap li {
-    float: left;
-}
-
-/* Remove default bullet points of unordered lists */
-#nav-wrap ul {
-    list-style-type: none;
-    margin-top: 1.2vh;
-    padding: 0px;
-}
-
-/* Change hyperlink color, and remove underline */
-#nav-wrap li a {
-    color: rgb(255, 255, 255);
-    text-decoration-line: none;
-}
-
-#nav-wrap li a {
-    display: flex;
-    color: white;
-    padding: 0.8vw;
-    text-decoration: none;
-}
-
-/* change color when hovering over link */
-#nav-wrap li a:hover{
-    color: rgba(128, 213, 255, 0.6);
-    transition: 350ms;
-}
-
-#nav-wrap li a:not(:hover) {
-    transition: 350ms;
-}
-
-
-/* NAVIGATION MENU: SOCIALS
-======================================================= */
-#nav-wrap .socials {
-    list-style-type: none;
-}
-
-#nav-wrap .socials li {
-    float: left;
-}
-
-#nav-wrap .socials li a {
-    color: rgb(213, 213, 213);
-    font-size: 1.8vw;
-    position: relative;
-    bottom: 1.4vh;
-    left: 1.6vw;
-}
-
-/* Change color of socials when hovering over them */
-#nav-wrap .socials li a:hover {
-    color: rgb(113, 175, 236);
-    transition: 350ms;
-}
-
-/* Transition after moving mouse away from socials */
-#nav-wrap .socials li a:not(:hover) {
-    transition: 350ms;
-}
-
-
-/* ====================================================
-SCROLL DOWN BUTTON
-======================================================= */
+/* SCROLL DOWN BUTTON
+======================================== */
 #scroll-down {
     aspect-ratio: 1;
     color: rgba(255, 255, 255, 0.75);
@@ -146,7 +53,6 @@ SCROLL DOWN BUTTON
     font-size: max(10vh, 36px);
 }
 
-/* Change color of the scroll down button after hovering mouse over it */
 #scroll-down:hover {
     color: rgba(188, 242, 255, 0.75);
     transition: 350ms;

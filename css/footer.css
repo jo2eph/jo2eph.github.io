@@ -6,26 +6,25 @@ CSS for Footer Section
 /* FOOTER 
 ======================================================= */
 footer {
-    background:     rgb(30, 30, 30);
-    color:          rgb(148, 148, 148);
-    margin-bottom:  48px;
-    padding-top:    48px;
-    position:       relative;
+    background: rgb(30, 30, 30);
+    color: rgb(148, 148, 148);
+    margin-bottom: 48px;
+    padding-top: 48px;
+    position: relative;
 }
 
 
 /* FOOTER Left Hand Side
 ======================================================= */
 footer p {
-    font-size:   max(1.1vw, 12px);
+    font-size: max(1.1vw, 12px);
     margin-left: 30px;
-    overflow:    auto;
-    width:       30%;
+    overflow: auto;
+    width: 30%;
 }
 
-/* Change color of hyperlink to GitHub repo in footer */
 footer p a {
-    color:          rgb(110, 174, 226);
+    color: rgb(110, 174, 226);
     text-decoration: none;
 }
 
@@ -34,28 +33,26 @@ footer p a {
 ======================================================= */
 footer .socials {
     position: absolute;
-    bottom:   -5%;
-    right:    5%;
+    bottom: -5%;
+    right: 5%;
 }
 
-/* Removes bullet point of list */
 footer .socials {
     list-style-type: none;
 }
 
 footer .socials li {
-    float:  left;
+    float: left;
     margin: 16px;
 }
 
-/* Changes color */
 footer .socials a {
-    color:    rgb(140, 140, 140);
+    color: rgb(140, 140, 140);
     font-size: max(2.4vw, 24px);
 }
 
-/* Changes color after hovering over icon */
 footer .socials a:hover {
-    color:    rgb(213, 213, 213);
+    color:rgb(213, 213, 213);
+    cursor: pointer;
 }
 
