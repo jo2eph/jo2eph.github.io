@@ -2,7 +2,6 @@
 CSS for Home Section 
 */
 
-
 /* HOME 
 ======================================== */
 #home {
@@ -11,32 +10,33 @@ CSS for Home Section
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
     text-align: center;
     width: 100vw;
 }
 
 /* BANNER
 ======================================== */
-header #banner {
+#banner {
     position: absolute;
-    top: 15em;
-    width: 100vw;
+    top: 33vh;
+    width: 100%;
+    padding: 16px 2vw;
 }
 
 #banner h1 {
     color: rgb(238, 238, 238);
-    font-size: max(7vw, 64px);
+    font-size: max(6vw, 56px);
     letter-spacing: 2px;
     margin-bottom: 1vw;
-    padding: 0.5vw;
+    padding: 0.5vw 0;
     text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.7);
 }
 
 #banner h3 {
     color: rgb(242, 242, 242);
-    font-size: max(1.6vw, 18px);
-    letter-spacing: 1px;
+    font-size: max(1.4vw, 16px);
+    letter-spacing: 1.4px;
+    padding: 0px 1vw;
     margin: 1vw;
     overflow: auto;
     text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
@@ -48,7 +48,7 @@ header #banner {
     aspect-ratio: 1;
     color: rgba(255, 255, 255, 0.75);
     position: absolute;
-    top: 87vh;
+    top: 90vh;
     font-size: max(10vh, 36px);
 }
 
@@ -59,4 +59,24 @@ header #banner {
 
 #scroll-down:not(:hover) {
      transition: 350ms;
+}
+
+
+@media 
+    only screen
+    and (width <= 375px) 
+{
+    #banner {
+        top: 33vh;
+    }
+
+    #banner h1 {
+        font-size: 48px;
+        margin-bottom: 8px;
+    }
+
+    #banner h3 {
+        font-size: 12px;
+        padding: 0px 24px;
+    }
 }

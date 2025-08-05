@@ -1,17 +1,6 @@
-// Breakpoints
-const minWidth = 480;
-const minHeight = 600;
-
 const jumpToTopButton = document.getElementById("jump-to-top");
-
-// Hide navbar menu; display hamburger menu
-window.addEventListener("resize", (event) => {
-    const width = window.innerWidth;
-
-    if (width <= minWidth) {
-        console.log("The screen is getting too small");
-    }
-});
+const mobileMenu = document.getElementById("mobile-menu");
+const socials = document.getElementById("socials")
 
 
 // Show or Hide Jump To Top
@@ -25,7 +14,27 @@ window.addEventListener('scroll', (event) => {
 });
 
 
+window.addEventListener("resize", (event) => {
+    const width = window.innerWidth;
+
+    if (width > 980) {
+        socials.style.display = 'block';
+    } else {
+        socials.style.display = 'none';
+    }
+});
+
+
 // Display menu on phone devices
-displayMenu = function() {
-    console.log("Hello world");
-}
+mobileMenu.addEventListener('click', (event) => {
+    const width = window.innerWidth;
+    
+    if (width < 980 && width > 680 && !isMenuShown) {
+        socials.style.display = 'block';
+        isMenuShown = true;
+    } else if (width < 980 && width > 680 && isMenuShown) {
+        socials.style.display = 'none';
+        isMenuShown = false;
+    }
+})
+
