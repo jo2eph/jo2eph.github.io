@@ -5,78 +5,96 @@ CSS for Home Section
 /* HOME 
 ======================================== */
 #home {
+    align-items: center;
     background-image: url("../assets/background.JPG");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
     height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 /* BANNER
 ======================================== */
 #banner {
-    position: absolute;
-    top: 33vh;
-    width: 100%;
-    padding: 16px 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 1vw;
+    min-height: 240px;
+    max-width: 1024px;
+    text-align: center;
+    width: 85%;
 }
 
 #banner h1 {
     color: rgb(238, 238, 238);
-    font-size: max(6vw, 56px);
+    font-size: 48px;
     letter-spacing: 2px;
-    margin-bottom: 1vw;
-    padding: 0.5vw 0;
+    margin-bottom: 8px;
+    padding: 4px 0;
     text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.7);
 }
 
 #banner h3 {
     color: rgb(242, 242, 242);
-    font-size: max(1.4vw, 16px);
+    font-size: 16px;
     letter-spacing: 1.4px;
-    padding: 0px 1vw;
-    margin: 1vw;
-    overflow: auto;
+    padding: 0px;
+    margin: 6px 4px;
+    text-align: center;
     text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
+    width: 100%;
 }
 
-/* SCROLL DOWN BUTTON
+/* SCROLL DOWN
 ======================================== */
 #scroll-down {
     aspect-ratio: 1;
     color: rgba(255, 255, 255, 0.75);
+    font-size: 64px;
     position: absolute;
-    top: 90vh;
-    font-size: max(10vh, 36px);
-}
-
-#scroll-down:hover {
-    color: rgba(188, 242, 255, 0.75);
-    transition: 350ms;
-}
-
-#scroll-down:not(:hover) {
-     transition: 350ms;
-}
-
-
-@media 
-    only screen
-    and (width <= 375px) 
-{
-    #banner {
-        top: 33vh;
+    bottom: 1vh;
+    :hover {
+        color: rgba(188, 242, 255, 0.75);
+        transition: 300ms;
     }
+    :not(:hover) {
+        transition: 300ms;
+   }
+}
 
+
+/* Tablet */
+@media
+    only screen
+    and (min-width: 375px)
+    and (max-width: 1024px)
+{
     #banner h1 {
-        font-size: 48px;
-        margin-bottom: 8px;
+        font-size: min(13vw, 76px);
     }
 
     #banner h3 {
-        font-size: 12px;
-        padding: 0px 24px;
+        font-size: min(4vw, 24px);
+    }
+}
+
+@media
+    only screen
+    and (min-width: 1024px)
+{
+    #banner h1 {
+        font-size: min(8vw, 136px)
+    }
+
+    #banner h3 {
+        font-size: min(2.5vw, 32px);
     }
 }
