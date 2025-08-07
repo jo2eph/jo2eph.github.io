@@ -1,6 +1,9 @@
+import "./utils"
+
 const jumpToTopButton = document.getElementById("jump-to-top");
 const mobileMenu = document.getElementById("mobile-menu");
 const socials = document.getElementById("socials")
+const nav = document.getElementById("nav");
 
 
 // Show or Hide Jump To Top
@@ -14,27 +17,38 @@ window.addEventListener('scroll', (event) => {
 });
 
 
-window.addEventListener("resize", (event) => {
-    const width = window.innerWidth;
-
-    if (width > 980) {
-        socials.style.display = 'block';
-    } else {
-        socials.style.display = 'none';
-    }
-});
-
-
 // Display menu on phone devices
 mobileMenu.addEventListener('click', (event) => {
     const width = window.innerWidth;
-    
-    if (width < 980 && width > 680 && !isMenuShown) {
-        socials.style.display = 'block';
-        isMenuShown = true;
-    } else if (width < 980 && width > 680 && isMenuShown) {
-        socials.style.display = 'none';
-        isMenuShown = false;
+    const display = window.getComputedStyle(mobileMenu).display.toLowerCase();
+
+    // breakpoints defined in style.css
+    const firstBreakpoint = 720;
+    const secondBreakpoint = 1024;
+
+    // get computed style of nav and socials
+    const navDisplay = window.getComputedStyle(nav).display.toLowerCase();
+    const socialsDisplay = window.getComputedStyle(socials).display.toLowerCase();
+
+    if (display != 'none') {
+        
+        // Both socials and nav
+        if (width < firstBreakpoint) {
+            
+            if (
+                navDisplay == 'none' &&
+                socialsDisplay == 'none'
+            ) {
+                nav.style.display == 'block';
+                socials.style.display == 'block';
+            }
+
+        }
+
+        // Only socials
+        else if (width > firstBreakpoint && width <= secondBreakpoint) {
+            console.log("Tablet");
+        }
     }
 })
 

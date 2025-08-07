@@ -29,23 +29,24 @@ body {
     right: 5px;
     bottom: 0px;
     z-index: 100;
-    :hover {
-        color: rgba(120, 197, 245, 0.8);
-        font-size: max(11vh, 57px);
-        transition: 300ms;
-    }
-    :not(hover) {
-        transition: 300ms;
-    }
 }
+#jump-to-top:hover {
+    color: rgba(120, 197, 245, 0.8);
+    font-size: max(11vh, 57px);
+    transition: 300ms;
+}
+#jump-to-top:not(hover) {
+    transition: 300ms;
+}
+
 
 /* NAVBAR
 ======================================== */
 #nav-container {
-    background-color: rgba(19, 19, 19, 0.86);
+    background-color: rgba(19, 19, 19, 0.87);
     box-shadow: 1px 0px 10px 1px #000000;;
     display: flex;
-    height: 72px;
+    height: 78px;
     overflow: hidden;
     position: fixed;
     left: 0px;
@@ -54,22 +55,15 @@ body {
     z-index: 50;
 }
 
-#nav-container #nav li,
-#nav-container #socials li {
-    float: left;
-    list-style-type: none;
-}
-
-/* LOGO */
 #nav-container #logo {
     margin: 0px 0.2em;
     padding: 0px 0.8em;
     position: absolute;
-    top: 0.6em;
+    top: 1em;
 }
 
 #nav-container #logo #logo-icon {
-    font-size: 46px;
+    font-size: 44px;
     color: rgb(127, 142, 144);
     :hover {
         cursor: pointer;
@@ -77,61 +71,12 @@ body {
     }
 }
 
-/* NAV */
-#nav-container #nav {
-    display: none;
-    margin: 1.5em 3vw;
-    position: absolute;
-    left: 23.5vw;
-    width: max(52vw, 456px);
-}
-
-#nav-container #nav li {
-    padding: 0px 2.4vw;
-}
-
-#nav-container #nav li a {
-    color: rgb(232, 232, 232);
-    font-size: max(1.1vw, 12px);
-    letter-spacing: 1.6px;
-    text-decoration: none;
-    :hover {
-        background-color: rgba(102, 102, 102, 0.3);
-        border-radius: 10px;
-        color: rgb(17, 171, 179);
-        cursor: pointer;
-        font-size: 1.3vw;
-        padding: 12px;
-        transition: 320ms;
-    }
-    :not(hover) {
-        transition: 320ms;
-    }
-}
-
-/* SOCIALS */
+#nav-container #nav, 
 #nav-container #socials {
     display: none;
-    margin: 1.4em 3%;
-    position: absolute;
-    left: 80%;
-    width: 25%;
 }
 
-#nav-container #socials li {
-    padding: 0px 7%;
-}
-
-#nav-container #socials li a {
-    color: rgb(206, 206, 206);
-    font-size: max(1.4vw, 24px);
-    :hover {
-        color: rgb(82, 117, 147);
-        cursor: pointer;
-    }
-}
-
-/* HAMBURGER MENU */
+/* Mobile Menu */
 #nav-container #mobile-menu {
     color: white;
     display: block;
@@ -139,6 +84,7 @@ body {
     margin: 0.25em 0.2em;
     position: absolute;
     right: 1%;
+    top: 0.1em;
     :hover {
         color: rgb(101, 145, 168);
         cursor: pointer;
@@ -151,19 +97,54 @@ body {
 @media
     only screen
     and (min-width: 720px)
-    and (max-width: 1024px)
 {
-    #nav-container #nav {
-        display: block;
+    #nav-container {
+        display: flex;
+        flex-direction: row;
     }
 
-    #nav-container #socials {
-        background-color: rgba(42, 46, 48, 0.837);
+    #nav-container #nav {
+        display: block;
+        margin: 1.5em min(3vw, 20px);
+        position: absolute;
+        left: 23vw;
+        width: 56vw;
+        max-width: 800px;
+    }
+    
+    #nav-container #nav li {
+        float: left;
+        list-style-type: none;
+        padding: 0px min(2.5vw, 24px);
+    }
+    
+    #nav-container #nav li a {
+        color: rgb(232, 232, 232);
+        font-size: min(1.3vw, 18px);
+        letter-spacing: 1.5px;
+        text-decoration: none;
+    }
+
+    #nav-container #nav li a:hover {
+        background-color: rgba(102, 102, 102, 0.3);
+        border-radius: 10px;
+        color: rgb(17, 171, 179);
+        cursor: pointer;
+        font-size: min(1.35vw, 19px);
+        padding: 8px;
+        transition: 300ms;
+    }
+
+    #nav-container #nav li a:not(hover) {
+        transition: 300ms;
+    }
+
+    #nav-container #socials,
+    #nav-container #socials li {
         display: none;
-        padding: 16px;
-        top: 2.7em;
     }
 }
+
 
 /* Desktop */
 @media
@@ -171,11 +152,32 @@ body {
     and (min-width: 1024px)
 {
     #nav-container #nav {
-        display: block;
+        margin-left: 3em;
+        width: min(60vw, 800px);
     }
 
     #nav-container #socials {
         display: block;
+        margin: 1.4em 2%;
+        position: absolute;
+        left: 80%;
+        width: 15em;
+    }
+
+    #nav-container #socials li {
+        display: block;
+        padding: 0px 7%;
+        float: left;
+        list-style-type: none;
+    }
+
+    #nav-container #socials li a {
+        color: rgb(206, 206, 206);
+        font-size: max(1.4vw, 24px);
+        :hover {
+            color: rgb(82, 117, 147);
+            cursor: pointer;
+        }
     }
 
     #nav-container #mobile-menu {

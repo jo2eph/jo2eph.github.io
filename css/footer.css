@@ -2,57 +2,84 @@
 CSS for Footer Section
 */
 
-
-/* FOOTER 
-======================================================= */
 footer {
-    background: rgb(30, 30, 30);
     color: rgb(148, 148, 148);
-    margin-bottom: 48px;
-    padding-top: 48px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-bottom: 64px;
+    padding: 48px 16px;
 }
 
-
-/* FOOTER Left Hand Side
-======================================================= */
-footer p {
-    font-size: max(1.1vw, 12px);
-    margin-left: 30px;
-    overflow: auto;
-    width: 30%;
+/* Left */
+footer #footer-left,
+footer #footer-right {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
 }
 
-footer p a {
+footer #footer-left {
+    font-size: 14px;
+    flex-basis: 50%;
+    margin-left: 16px;
+}
+
+footer #footer-left a {
     color: rgb(110, 174, 226);
     text-decoration: none;
 }
-
-
-/* FOOTER Right hand Side SOCIALS
-======================================================= */
-footer .socials {
-    position: absolute;
-    bottom: -5%;
-    right: 5%;
+footer #footer-left a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-footer .socials {
+/* Right */
+footer #footer-right {
+    align-self: center;
+    margin: 1em 0px;
+}
+
+footer #footer-right .socials {
     list-style-type: none;
 }
 
-footer .socials li {
+footer #footer-right .socials li {
     float: left;
-    margin: 16px;
+    margin: 12px 10px;
 }
 
-footer .socials a {
+footer #footer-right .socials li a {
     color: rgb(140, 140, 140);
     font-size: max(2.4vw, 24px);
+    :hover {
+        color:rgb(213, 213, 213);
+        cursor: pointer;
+    }
 }
 
-footer .socials a:hover {
-    color:rgb(213, 213, 213);
-    cursor: pointer;
-}
+@media
+    only screen
+    and (min-width: 376px) 
+{
+    footer {
+        flex-direction: row;
+        align-items: space-between;
+    }
 
+    footer #footer-left {
+        font-size: min(4vw, 18px);
+        margin-left: 0px;
+        padding: 8px 1em;
+    }
+
+    footer #footer-right {
+        margin: 0px 8px;
+    }
+}
