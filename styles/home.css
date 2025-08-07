@@ -56,7 +56,7 @@ CSS for Home Section
 #scroll-down {
     aspect-ratio: 1;
     color: rgba(70, 237, 215, 0.809);
-    font-size: 64px;
+    font-size: 70px;
     position: absolute;
     bottom: 1vh;
 }
@@ -64,9 +64,6 @@ CSS for Home Section
     color: rgba(188, 242, 255, 0.75);
     transition: 300ms;
     transform: scale(1.1);
-}
-#scroll-down:not(:hover) {
-    transition: 300ms;
 }
 
 
@@ -79,9 +76,12 @@ CSS for Home Section
     #banner h1 {
         font-size: min(10vw, 65px);
     }
-
     #banner h3 {
         font-size: min(4vw, 24px);
+    }
+
+    #scroll-down {
+        font-size: min(16vw, 76px);
     }
 }
 
@@ -94,8 +94,11 @@ CSS for Home Section
     #banner h1 {
         font-size: min(6.7vw, 90px)
     }
-
     #banner h3 {
         font-size: min(2.5vw, 22px);
+    }
+
+    #scroll-down {
+        font-size: min(7.6vw, 90px);
     }
 }
