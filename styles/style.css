@@ -52,23 +52,23 @@ body {
     left: 0px;
     top: 0px;
     width: 100%;
-    z-index: 50;
+    z-index: 100;
 }
 
+/* Logo */
 #nav-container #logo {
     margin: 0px 0.2em;
     padding: 0px 0.8em;
     position: absolute;
     top: 1em;
 }
-
 #nav-container #logo #logo-icon {
     font-size: 44px;
     color: rgb(127, 142, 144);
-    :hover {
-        cursor: pointer;
-        color: rgb(193, 193, 193)
-    }
+}
+#nav-container #logo #logo-icon:hover {
+    cursor: pointer;
+    color: rgb(193, 193, 193)
 }
 
 #nav-container #nav, 
@@ -85,11 +85,16 @@ body {
     position: absolute;
     right: 1%;
     top: 0.1em;
-    :hover {
-        color: rgb(101, 145, 168);
-        cursor: pointer;
-        transform: scale(1.1);
-    }
+}
+#nav-container #mobile-menu:hover {
+    color: rgb(101, 145, 168);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#nav-container #nav #nav-ul .active > a {
+    color: rgb(74, 96, 98);
+    pointer-events: none;
 }
 
 
@@ -103,6 +108,7 @@ body {
         flex-direction: row;
     }
 
+    /* Nav */
     #nav-container #nav {
         display: block;
         margin: 1.5em min(3vw, 20px);
@@ -111,20 +117,17 @@ body {
         width: 56vw;
         max-width: 800px;
     }
-    
     #nav-container #nav li {
         float: left;
         list-style-type: none;
-        padding: 0px min(2.5vw, 24px);
+        padding: 3px min(2.6vw, 35px);
     }
-    
     #nav-container #nav li a {
         color: rgb(232, 232, 232);
-        font-size: min(1.3vw, 18px);
+        font-size: min(1.3vw, 17px);
         letter-spacing: 1.5px;
         text-decoration: none;
     }
-
     #nav-container #nav li a:hover {
         background-color: rgba(102, 102, 102, 0.3);
         border-radius: 10px;
@@ -135,10 +138,7 @@ body {
         transition: 300ms;
     }
 
-    #nav-container #nav li a:not(hover) {
-        transition: 300ms;
-    }
-
+    /* Socials */
     #nav-container #socials,
     #nav-container #socials li {
         display: none;
@@ -151,29 +151,29 @@ body {
     only screen
     and (min-width: 1024px)
 {
+    /* Nav */
     #nav-container #nav {
-        margin-left: 3em;
+        margin-left: min(3.2vw, 3.8em);
         width: min(60vw, 800px);
     }
 
+    /* Socials */
     #nav-container #socials {
         display: block;
         margin: 1.4em 2%;
         position: absolute;
-        left: 80%;
+        left: 78%;
         width: 15em;
     }
-
     #nav-container #socials li {
         display: block;
-        padding: 0px 7%;
+        padding: 0px 9%;
         float: left;
         list-style-type: none;
     }
-
     #nav-container #socials li a {
         color: rgb(206, 206, 206);
-        font-size: max(1.4vw, 24px);
+        font-size: max(1.4vw, 26px);
         :hover {
             color: rgb(82, 117, 147);
             cursor: pointer;

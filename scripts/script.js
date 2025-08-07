@@ -1,14 +1,19 @@
-import "./utils"
+const width = window.innerWidth;
 
-const jumpToTopButton = document.getElementById("jump-to-top");
-const mobileMenu = document.getElementById("mobile-menu");
-const socials = document.getElementById("socials")
-const nav = document.getElementById("nav");
+// Breakpoints defined in style.css
+const firstBreakpoint = 720;
+const secondBreakpoint = 1024;
+
+window.addEventListener('load', (event) => {
+    navbarActiveSection()
+})
 
 
-// Show or Hide Jump To Top
+// Show or hide Jump To Top
 window.addEventListener('scroll', (event) => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 200) {
+    const jumpToTopButton = document.getElementById("jump-to-top");
+
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 200) {
         jumpToTopButton.style.display = "block";
     }
     else {
@@ -17,38 +22,33 @@ window.addEventListener('scroll', (event) => {
 });
 
 
+// Highlight navbar depending on where user is
+document.addEventListener('scroll', () => {
+    navbarActiveSection()
+})
+
+
 // Display menu on phone devices
+const mobileMenu = document.getElementById('mobile-menu');
+
 mobileMenu.addEventListener('click', (event) => {
-    const width = window.innerWidth;
-    const display = window.getComputedStyle(mobileMenu).display.toLowerCase();
 
-    // breakpoints defined in style.css
-    const firstBreakpoint = 720;
-    const secondBreakpoint = 1024;
-
-    // get computed style of nav and socials
-    const navDisplay = window.getComputedStyle(nav).display.toLowerCase();
-    const socialsDisplay = window.getComputedStyle(socials).display.toLowerCase();
-
-    if (display != 'none') {
+    if (isHidden('mobile-menu')) {
         
         // Both socials and nav
         if (width < firstBreakpoint) {
-            
-            if (
-                navDisplay == 'none' &&
-                socialsDisplay == 'none'
-            ) {
-                nav.style.display == 'block';
-                socials.style.display == 'block';
-            }
-
+            toggleDisplay('nav');
+            toggleDisplay('socials');
         }
 
         // Only socials
         else if (width > firstBreakpoint && width <= secondBreakpoint) {
-            console.log("Tablet");
+            toggleDisplay('socials');
         }
     }
 })
 
+
+window.addEventListener('resize', (event) => {
+    // TODO
+})
