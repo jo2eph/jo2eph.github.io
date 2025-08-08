@@ -28,7 +28,7 @@ CSS for Home Section
     align-items: center;
     padding: 8px 1vw;
     min-height: 240px;
-    max-width: 1024px;
+    max-width: 960px;
     text-align: center;
     width: 85%;
 }
@@ -67,7 +67,7 @@ CSS for Home Section
 }
 
 
-/* Tablet */
+/* TABLET */
 @media
     only screen
     and (min-width: 375px)
@@ -77,7 +77,7 @@ CSS for Home Section
         font-size: min(10vw, 65px);
     }
     #banner h3 {
-        font-size: min(4vw, 24px);
+        font-size: min(3.6vw, 24px);
     }
 
     #scroll-down {
@@ -86,7 +86,7 @@ CSS for Home Section
 }
 
 
-/* Desktop */
+/* DESKTOP */
 @media
     only screen
     and (min-width: 1024px)
@@ -95,7 +95,7 @@ CSS for Home Section
         font-size: min(6.7vw, 90px)
     }
     #banner h3 {
-        font-size: min(2.5vw, 22px);
+        font-size: min(2.6vw, 27px);
     }
 
     #scroll-down {
