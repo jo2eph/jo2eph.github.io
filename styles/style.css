@@ -20,7 +20,7 @@ body {
 /* JUMP TO TOP
 ======================================== */
 #jump-to-top {
-    color: rgba(151, 205, 213, 0.8);
+    color: rgba(50, 63, 66, 0.8);
     display: none;
     font-size: max(10vh, 56px);
     padding: 0px;
@@ -31,7 +31,7 @@ body {
     z-index: 100;
 }
 #jump-to-top:hover {
-    color: rgba(120, 197, 245, 0.8);
+    color: rgba(73, 148, 195, 0.8);
     font-size: max(11vh, 57px);
     transition: 300ms;
 }

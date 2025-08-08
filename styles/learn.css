@@ -1,15 +1,15 @@
 /* 
-CSS for Experience Section
+CSS for Learn Section
 */
 
 
-#experience {
+#learn {
     background-color: rgb(185, 185, 185);
     margin: 0px;
     padding: 0px;
 }
 
-#section-name-experience {
+#section-name-learn {
     color: rgb(23, 21, 21);
     font-size: 3.2vw;
     margin-bottom: 2.6vw;

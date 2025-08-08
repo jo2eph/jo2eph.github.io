@@ -5,10 +5,10 @@ CSS for About Section
 /* ABOUT 
 ======================================================= */
 #about {
-    background-color: rgb(118, 174, 182);
+    background-color: rgb(152, 200, 208);
     background-size: cover;
     box-sizing: border-box;
-    margin: 0px;
+    margin: auto;
     padding: 16px 1vw 2.5em 1vw;
 }
 
@@ -26,7 +26,7 @@ CSS for About Section
     align-items: stretch;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin: 8px 4vw;
+    margin: 8px auto;
     width: 87vw;
     max-width: 1020px;
 }
@@ -54,15 +54,16 @@ CSS for About Section
 }
 .card p {
     font-size: 18px;
-    padding: 6px 0px;
+    line-height: 1.5;
     margin: 5px;
+    padding: 6px 0px;
 }
 .card ul {
     margin-left: 8px;
     font-size: 18px;
 }
 .card li {
-    margin: 3px 0px;
+    margin: 8px 0px;
 }
 
 #about-section-1,
@@ -82,7 +83,7 @@ CSS for About Section
 
 /* Profile */
 #about-section-1 #profile {
-    background-color: rgba(246, 255, 252, 0.726);
+    background-color: rgba(245, 245, 245, 0.78);
     min-width: 240px;
     padding: 24px 16px;
     text-align: center;
@@ -142,7 +143,7 @@ CSS for About Section
 
 /* Courses */
 #about-section-2 #courses {
-    background-color: rgba(240, 203, 55, 0.833);
+    background-color: rgba(253, 228, 132, 0.833);
 }
 #about-section-2 #courses #courses-container {
     display: flex;
@@ -163,18 +164,19 @@ CSS for About Section
 }
 #about-section-3 #skills h4 {
     font-size: 20px;
+    margin: 12px 0px;
 }
 #soft-skills,
 #languages,
 #technical-skills {
-    margin: 4px 6px;
+    margin: 8px 6px;
 }
 
 
 /* TABLET */
 @media
     only screen
-    and (min-width: 680px)
+    and (min-width: 700px)
 {
     #about-container {
         width: 90vw;
@@ -194,11 +196,44 @@ CSS for About Section
         font-size: 30px;
     }
 
+    /* SECTION 1 */
+
+    /* Profile */
+    #about-section-1 #profile {
+        flex-basis: 35%;
+    }
+    #about-section-1 #profile img {
+        height: min(25vw, 220px);
+    }
+
+    /* Summary */
+    #about-section-1 #summary {
+        flex-basis: 65%;
+    }
+
     /* SECTION 2 */
-    
+
+    /* Education */
+    #about-section-2 #education {
+        flex-basis: 45%;
+    }
+
     /* Courses */
+    #about-section-2 #courses {
+        flex-basis: 55%;
+    }
     #about-section-2 #courses #courses-container {
         flex-direction: column;
+    }
+
+    /* SECTION 3 */
+
+    /* Skills */
+    #about-section-3 #skills {
+        flex-basis: 100%;
+    }
+    #about-section-3 #skills-container {
+        flex-direction: row;
     }
 }
 
@@ -206,10 +241,10 @@ CSS for About Section
 /* DESKTOP */
 @media
     only screen
-    and (min-width: 720px)
+    and (min-width: 780px)
 {
     #about-container { 
-        max-width: 1280px;
+        max-width: 1440px;
     }
 
     /* SECTION 1 */
@@ -217,7 +252,6 @@ CSS for About Section
     /* Profile */
     #about-section-1 #profile {
         flex-basis: 35%;
-        width: 700px;
     }
     #about-section-1 #profile img {
         height: min(25vw, 240px);
@@ -232,7 +266,7 @@ CSS for About Section
 
     /* Education */
     #about-section-2 #education {
-        flex-basis: 40%;
+        flex-basis: 45%;
     }
 
     /* Courses */

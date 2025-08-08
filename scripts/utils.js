@@ -2,13 +2,6 @@
 Some helpful functions
 */
 
-const home = document.getElementById("home");
-const about = document.getElementById("about");
-const blog = document.getElementById("blog");
-const experience = document.getElementById("experience");
-const portfolio = document.getElementById("portfolio");
-
-
 // Check if, given an id, an element is hidden
 function isHidden(id) {
     const element = document.getElementById(id);
@@ -27,7 +20,13 @@ function isHidden(id) {
 
 // Set or remove active class for navbar
 function navbarActiveSection() {
-    const sections = ['home', 'about', 'blog', 'experience', 'portfolio'];
+    const sections = ['home', 'about', 'blog', 'learn', 'portfolio'];
+
+    const home = document.getElementById("home");
+    const about = document.getElementById("about");
+    const blog = document.getElementById("blog");
+    const learn = document.getElementById("learn");
+    const portfolio = document.getElementById("portfolio");
 
     const y = scrollY;
     let active = "";
@@ -41,7 +40,7 @@ function navbarActiveSection() {
     if (y >= blog.getBoundingClientRect().top) {
         active = "blog";
     }
-    if (y >= experience.getBoundingClientRect().top) {
+    if (y >= learn.getBoundingClientRect().top) {
         active = "experience";
     }
     if (y >= portfolio.getBoundingClientRect().top) {

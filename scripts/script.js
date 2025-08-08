@@ -24,7 +24,7 @@ window.addEventListener('scroll', (event) => {
 
 // Highlight navbar depending on where user is
 document.addEventListener('scroll', () => {
-    navbarActiveSection()
+    navbarActiveSection();
 })
 
 
