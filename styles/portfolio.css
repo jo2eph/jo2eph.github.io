@@ -5,15 +5,14 @@ CSS for Portfolio Section
 /* PORTFOLIO
 ======================================================= */
 #portfolio {
-    background-color: rgb(171, 137, 137);
+    background-color: rgb(208, 189, 189);
     margin: 0px;
-    padding: 0px;
+    padding: 16px;
 }
 
 #section-name-portfolio {
     color: rgb(0, 0, 0);
-    font-size: 3.2vw;
-    margin-bottom: 2.6vw;
-    padding-top: 4vw;
+    font-size: 3rem;
+    padding: 3.5vw 0px 0.25em 0px;
     text-align: center;
 }

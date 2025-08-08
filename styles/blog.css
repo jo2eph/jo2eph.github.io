@@ -3,15 +3,29 @@ CSS for Blog Section
 */
 
 #blog {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(185, 185, 185);
     margin: 0px;
-    padding: 0px;
+    padding: 16px;
 }
 
 #section-name-blog {
-    color: rgb(214, 214, 214);
-    font-size: 3.2vw;
-    margin-bottom: 2.6vw;
-    padding-top: 4vw;
+    color: rgb(25, 25, 25);
+    font-size: 3rem;
+    padding: 3.5vw 0px 0.25em 0px;
     text-align: center;
+}
+
+#blog-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media 
+    only screen 
+    and (min-width: 375px)
+{
+    #blog-container {
+        flex-direction: row;
+    }
 }

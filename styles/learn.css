@@ -2,17 +2,15 @@
 CSS for Learn Section
 */
 
-
 #learn {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(174, 207, 200);
     margin: 0px;
-    padding: 0px;
+    padding: 16px;
 }
 
 #section-name-learn {
     color: rgb(23, 21, 21);
-    font-size: 3.2vw;
-    margin-bottom: 2.6vw;
-    padding-top: 4vw;
+    font-size: 3rem;
+    padding: 3.5vw 0px 0.25em 0px;
     text-align: center;
 }
