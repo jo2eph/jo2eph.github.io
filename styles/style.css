@@ -35,18 +35,15 @@ body {
     font-size: max(11vh, 57px);
     transition: 300ms;
 }
-#jump-to-top:not(hover) {
-    transition: 300ms;
-}
-
 
 /* NAVBAR
 ======================================== */
 #nav-container {
-    background-color: rgba(19, 19, 19, 0.87);
-    box-shadow: 1px 0px 10px 1px #000000;;
+    background-color: #06070fdb;
+    box-shadow: 1px 0px 10px 1px #000000;
     display: flex;
-    height: 78px;
+    flex-direction: column;
+    height: 80px;
     overflow: hidden;
     position: fixed;
     left: 0px;
@@ -111,9 +108,7 @@ body {
     /* Nav */
     #nav-container #nav {
         display: block;
-        margin: 1.5em min(3vw, 20px);
-        position: absolute;
-        left: 23vw;
+        margin: 1.5em auto;
         width: 56vw;
         max-width: 800px;
     }
@@ -137,12 +132,6 @@ body {
         padding: 8px;
         transition: 300ms;
     }
-
-    /* Socials */
-    #nav-container #socials,
-    #nav-container #socials li {
-        display: none;
-    }
 }
 
 
@@ -153,7 +142,6 @@ body {
 {
     /* Nav */
     #nav-container #nav {
-        margin-left: min(3.2vw, 3.8em);
         width: min(60vw, 800px);
     }
 
@@ -162,22 +150,25 @@ body {
         display: block;
         margin: 1.4em 2%;
         position: absolute;
-        left: 78%;
-        width: 15em;
+        right: 2%;
+        max-width: 200px;
+        width: 25vw;
+    }
+    #nav-container #socials ul {
+        display: flex;
+        flex-direction: row;
     }
     #nav-container #socials li {
-        display: block;
-        padding: 0px 9%;
-        float: left;
+        padding: 0px 10% ;
         list-style-type: none;
     }
     #nav-container #socials li a {
         color: rgb(206, 206, 206);
-        font-size: max(1.4vw, 26px);
-        :hover {
-            color: rgb(82, 117, 147);
-            cursor: pointer;
-        }
+        font-size: max(1.4vw, 25px);
+    }
+    #nav-container #socials li a:hover {
+        color: rgb(82, 117, 147);
+        cursor: pointer;
     }
 
     #nav-container #mobile-menu {

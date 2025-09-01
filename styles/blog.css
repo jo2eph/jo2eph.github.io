@@ -8,6 +8,10 @@ CSS for Blog Section
     padding: 16px;
 }
 
+#blog p {
+    font-size: 18px;
+}
+
 #section-name-blog {
     color: rgb(25, 25, 25);
     font-size: 3rem;
