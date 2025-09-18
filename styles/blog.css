@@ -8,10 +8,6 @@ CSS for Blog Section
     padding: 16px;
 }
 
-#blog p {
-    font-size: 18px;
-}
-
 #section-name-blog {
     color: rgb(25, 25, 25);
     font-size: 3rem;
@@ -19,17 +15,129 @@ CSS for Blog Section
     text-align: center;
 }
 
-#blog-container {
+#section-summary-blog {
+    font-size: 1.4rem;
+    margin: 32px auto;
+    margin-top: clamp(8px, 2vw, 16px);
+    text-align: center;
+    width: clamp(280px, 80%, 1200px);
+}
+
+#blogs-container {
+    background-color: rgba(194, 220, 233, 0.188);
+    border: 1px solid rgba(65, 64, 69, 0.343);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: clamp(8px, 2vw, 16px);
+    padding: clamp(8px, 2vw, 16px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 1800px;
+}
+#blogs-container h3 {
+    font-size: 1.6rem;
+    margin: clamp(8px, 2vw, 16px);
+    text-align: center;
+}
+
+#blog-cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 97%;
+}
+
+.blog-card {
+    background-color: white;
+    border: 1px solid rgba(65, 64, 69, 0.343);
+    border-radius: 10px;
+    box-shadow: 3px 4px 13px 0px #0000007b;;
+    margin: clamp(8px, 2vw, 16px);
+    padding: clamp(8px, 2%, 16px);
+    width: clamp(200px, 90%, 720px);
+}
+.blog-card:hover {
+    transform: scale(1.05);
+    transition: 0.35s;
+}
+
+.blog-description .blog-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 12px clamp(4px, 1vw, 8px);
+}
+.blog-description .blog-title a {
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+}
+.blog-description .blog-title a:hover {
+    color: rgb(7, 81, 155);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.blog-author-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+.blog-author-container img {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 56px;
+}
+.blog-author-container .blog-author-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.blog-summary {
+    color: rgba(37, 48, 54, 0.464);
+}
+
+.blog-publishing-date {
+    color: rgba(9, 48, 70, 0.677);
 }
 
 
+/* Medium screens (tablets, 700px to 1349px)
+*/
 @media 
     only screen 
-    and (min-width: 375px)
+    and (min-width: 700px)
+    and (max-width: 1349px)
 {
-    #blog-container {
+    #blog-cards-container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .blog-card {
+        width: clamp(380px, 80%, 800px);
+    }
+}
+
+
+/* Large screens (desktops, 1350px and up)
+*/
+@media
+    only screen
+    and (min-width: 1350px)
+{
+    #blog-cards-container {
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .blog-card {
+        width: clamp(300px, 30%, 600px);
     }
 }

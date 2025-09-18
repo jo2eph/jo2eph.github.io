@@ -5,7 +5,6 @@ Some helpful functions
 const home = document.getElementById("home");
 const about = document.getElementById("about");
 const blog = document.getElementById("blog");
-const learn = document.getElementById("learn");
 const portfolio = document.getElementById("portfolio");
 
 
@@ -28,29 +27,26 @@ function isHidden(id) {
 const homeBound = home.getBoundingClientRect().top;
 const aboutBound = about.getBoundingClientRect().top;
 const blogBound = blog.getBoundingClientRect().top;
-const learnBound = learn.getBoundingClientRect().top;
 const portfolioBound = portfolio.getBoundingClientRect().top;
 
 function navbarActiveSection() {
-    const sections = ['home', 'about', 'blog', 'learn', 'portfolio'];
+    const sections = ['home', 'about', 'blog', 'portfolio'];
 
-    const y = scrollY;
+    var y = scrollY;
     let active = "";
 
-    if (y >= homeBound) {
-        active = "home";
-    }
-    if (y >= aboutBound) {
-        active = "about";
-    }
-    if (y >= blogBound) {
-        active = "blog";
-    }
-    if (y >= learnBound) {
-        active = "learn";
-    }
-    if (y >= portfolioBound) {
-        active = "portfolio";
+    switch (y) {
+        case (y >= portfolioBound):
+            active = "portfolio";
+            break;
+        case (y >= blogBound):
+            active = "blog";
+            break;
+        case (y >= aboutBound):
+            active = "about";
+            break;
+        default:
+            active = "home";
     }
 
     // set or remove class 'active' based on active section

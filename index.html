@@ -30,9 +30,10 @@
 </head>
 
 <body>
+
     <!-- JUMP TO TOP -->
     <a href="#home" id="jump-to-top" title="Jump to top">
-        <i class="bx bxs-chevron-up-circle"> </i>
+        <i class="bx bxs-chevron-up-circle"></i>
     </a>
 
     <!-- NAVBAR 
@@ -61,14 +62,14 @@
                         About
                     </a>
                 </li>
+                <li>
+                    <a href="#education">
+                        Education
+                    </a>
+                </li>
                 <li id="nav-btn-blog">
                     <a href="#blog">
                         Blog
-                    </a>
-                </li>
-                <li id="nav-btn-learn">
-                    <a href="#learn">
-                        Learn
                     </a>
                 </li>
                 <li id="nav-btn-portfolio">
@@ -131,9 +132,7 @@
 
     </header>
 
-
     <hr>
-    
 
     <!-- ABOUT
      ============================================== -->
@@ -195,8 +194,8 @@
                     <p>
                         I'm a <b>curious and passionate learner</b> with a wide range of interests.
                         <br>
-                        My interests primarily lie in <b>data science</b>, <b>statistics</b> and <b>machine learning</b>,
-                        <b>software</b>, and <b>applying math</b> to solve real-world problems.
+                        My interests primarily lie in <b>data science &amp statistics</b>, <b>machine learning</b>,
+                        <b>cryptography &amp cybersecurity</b>, and <b>applying math</b> to solve real-world problems.
                     </p>
                     <p>
                         Beyond academics, I enjoy a variety of creative and active pursuits.
@@ -361,42 +360,119 @@
             Blog
         </h2>
 
-        <p>
-            This section contains some of my blogs.
-            <br>
-            You can check out all of my blogs
-            <a href="https://jo2eph.github.io/blog">here</a>.
-        </p>
+        <div id="section-summary-blog">
+            <p>
+                Click <a href="https://jo2eph.github.io/blog/" title="Blog Main Page">here</a> for my blog home page,
+                where you can find all of my past blogs.
+            </p>
+            <p>
+                In my blog posts, I aim to share my thoughts, experiences, and knowledge on various topics,
+                <br>
+                including data science, statistics, programming, mathematics, and more.
+            </p>
+            <p>
+                I also share my personal experiences and insights on learning, productivity, and self-improvement.
+            </p>
+        </div>
 
-        <div id="blog-container">
+        <div id="blogs-container">
+
+            <h3>
+                Highlighted Blogs
+            </h3>
             
+            <div id="blog-cards-container">
+
+                <!-- BLOG 1 -->
+                <div class="blog-card">
+                    <a href="https://jo2eph.github.io/blog/posts/2025/09_15_communication_skill/" 
+                        title="The One Skill Every STEM Major Needs - But No One Teaches">
+                        <img src="" 
+                            alt="The One Skill Every STEM Major Needs - But No One Teaches">
+                    </a>
+
+                    <div class="blog-description">
+                        <h4 class="blog-title">
+                            <a href="https://jo2eph.github.io/blog/posts/2025/09_15_communication_skill/" 
+                                title="The One Skill Every STEM Major Needs - But No One Teaches">
+                                The One Skill Every STEM Major Needs - But No One Teaches
+                            </a>
+                        </h4>
+
+                        <div class="blog-summary">
+                            This one skill is the most important, but most neglected, skill for STEM majors.
+                        </div>
+                       
+                        <div class="blog-author-container">
+                            <img src="./assets/photo.jpg" alt="Author: Joseph Lee">
+
+                            <div class="blog-author">
+                                <div class="blog-author-name">
+                                    Joseph Lee
+                                </div>
+                                <div class="blog-publishing-date">
+                                    September 15, 2025
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-tags">
+                            <div class="tag">Communication</div>
+                            <div class="tag">Soft Skills</div>
+                            <div class="tag">STEM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG 2 -->
+                <div class="blog-card">
+                    <a href="https://jo2eph.github.io/blog/posts/2025/09_18_reflection_on_uchicago_writing/" 
+                        title="A Reflection on UChicago's “Craft of Writing Effectively”">
+                        <img src="" 
+                            alt="A Reflection on UChicago's “Craft of Writing Effectively”">
+                    </a>
+
+                    <div class="blog-description">
+                        <h4 class="blog-title">
+                            <a href="https://jo2eph.github.io/blog/posts/2025/09_18_reflection_on_uchicago_writing/" 
+                                title="A Reflection on UChicago's “Craft of Writing Effectively”">
+                                A Reflection on UChicago's “Craft of Writing Effectively”
+                            </a>
+                        </h4>
+
+                        <div class="blog-summary">
+                            This one skill is the most important, but most neglected, skill for STEM majors.
+                        </div>
+                       
+                        <div class="blog-author-container">
+                            <img src="./assets/photo.jpg" alt="Author: Joseph Lee">
+
+                            <div class="blog-author">
+                                <div class="blog-author-name">
+                                    Joseph Lee
+                                </div>
+                                <div class="blog-publishing-date">
+                                    September 18, 2025
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-tags">
+                            <div class="tag">Writing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOG 3 -->
+                
+
+            </div>
+
         </div>
 
     </section>
 
-
     <hr>
-    
-
-    <!-- LEARN
-     ============================================== -->
-    <section id="learn">
-
-        <h2 id="section-name-learn">
-            Learn
-        </h2>
-
-        <div>
-            This section is dedicated to storing tutorials, lessons,
-            or help on data science, math, computer science, programming,
-            machine learning, etc.
-        </div>
-        
-    </section>
-
-
-    <hr>
-    
 
     <!-- PORTFOLIO
      ============================================== -->
@@ -417,9 +493,7 @@
 
     </section>
 
-
     <hr>
-    
 
     <!-- FOOTER 
      ============================================== -->
@@ -458,7 +532,5 @@
         </div>
 
     </footer>
-
-    <!-- SCRIPTS -->
 </body>
 </html>
