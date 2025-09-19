@@ -28,6 +28,7 @@ CSS for Blog Section
     border: 1px solid rgba(65, 64, 69, 0.343);
     border-radius: 10px;
     margin: auto;
+    margin-bottom: 32px;
     margin-top: clamp(8px, 2vw, 16px);
     padding: clamp(8px, 2vw, 16px);
     display: flex;
