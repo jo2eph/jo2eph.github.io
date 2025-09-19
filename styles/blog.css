@@ -58,7 +58,7 @@ CSS for Blog Section
     box-shadow: 3px 4px 13px 0px #0000007b;;
     margin: clamp(8px, 2vw, 16px);
     padding: clamp(8px, 2%, 16px);
-    width: clamp(200px, 90%, 720px);
+    width: clamp(100px, 90%, 720px);
 }
 .blog-card:hover {
     transform: scale(1.05);
@@ -93,7 +93,7 @@ CSS for Blog Section
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
-    width: 56px;
+    width: 64px;
 }
 .blog-author-name {
     font-size: 1.2rem;
@@ -106,6 +106,7 @@ CSS for Blog Section
 
 .blog-publishing-date {
     color: rgba(9, 48, 70, 0.677);
+    margin: 6px 0px;
 }
 .blog-tags {
     display: flex;
