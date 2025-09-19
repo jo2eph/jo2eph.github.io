@@ -65,18 +65,18 @@ CSS for Blog Section
     transition: 0.35s;
 }
 
-.blog-description .blog-title {
+.blog-title {
     font-size: 1.6rem;
     font-weight: 700;
     margin: auto;
     margin-bottom: 8px;
     padding: 12px clamp(4px, 1vw, 8px);
 }
-.blog-description .blog-title a {
+.blog-title a {
     color: rgb(25, 25, 25);
     text-decoration: none;
 }
-.blog-description .blog-title a:hover {
+.blog-title a:hover {
     color: rgb(7, 81, 155);
     cursor: pointer;
     text-decoration: underline;
@@ -87,6 +87,7 @@ CSS for Blog Section
     align-items: center;
     gap: 12px;
     margin-top: 12px;
+    margin-left: clamp(4px, 1vw, 8px);
 }
 .blog-author-container img {
     aspect-ratio: 1;
@@ -94,7 +95,7 @@ CSS for Blog Section
     object-fit: cover;
     width: 56px;
 }
-.blog-author-container .blog-author-name {
+.blog-author-name {
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -105,6 +106,21 @@ CSS for Blog Section
 
 .blog-publishing-date {
     color: rgba(9, 48, 70, 0.677);
+}
+.blog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+.blog-tags .tag {
+    background-color: rgba(174, 188, 192, 0.527);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px #0000003b;
+    color: rgba(63, 68, 70, 0.827);
+    font-size: 0.9rem;
+    padding: 6px 14px;
 }
 
 
