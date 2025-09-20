@@ -39,11 +39,6 @@
     <!-- NAVBAR 
     ============================================== -->
     <nav id="nav-container">
-
-        <a href="javascript:void(0);" id="mobile-menu" onclick="toggleMobileMenu()" title="Toggle Mobile Menu">
-            <i class='bx bx-menu'></i>
-        </a>
-
         <div id="logo">
             <a href="https://jo2eph.github.io/" id="logo-icon" title="Joseph Lee">
                 <i class='bx bxs-home' ></i>
@@ -61,7 +56,7 @@
                     <a href="#about">
                         About
                     </a>
-                </li>
+                </li id="nav-btn-education">
                 <li>
                     <a href="#education">
                         Education
@@ -103,6 +98,66 @@
             </ul>
         </div>
         
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" title="Toggle Mobile Menu">
+            <i class='bx bx-menu' id="mobile-menu-button"></i>
+            
+            <div id="mobile-nav-container" class="hidden">
+                <!-- SECTION LINKS -->
+                <div id="mobile-nav" class="hidden">
+                    <ul>
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#education">
+                                Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">
+                                Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- SOCIAL LINKS -->
+                <div id="mobile-social" class="hidden">
+                    <ul>
+                        <li>
+                            <a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
+                                title="Send me an email">
+                                <i class="bx bxs-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jo2eph/" target="_blank"
+                                rel="noopener noreferrer" title="Connect with me on LinkedIn">
+                                <i class="bx bxl-linkedin-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
+                                title="Follow me on GitHub">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- HOME 
@@ -571,5 +626,7 @@
     </footer>
 
     <script src="./scripts/utils.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

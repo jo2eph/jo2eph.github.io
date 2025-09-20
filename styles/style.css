@@ -17,6 +17,10 @@ body {
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* JUMP TO TOP
 ======================================== */
 #jump-to-top {
@@ -43,7 +47,7 @@ body {
     box-shadow: 1px 0px 10px 1px #000000;
     display: flex;
     height: 80px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: fixed;
     left: 0px;
     top: 0px;
@@ -51,7 +55,7 @@ body {
     z-index: 100;
 }
 
-/* Logo */
+/* LOGO */
 #nav-container #logo {
     margin: 0px 0.2em;
     padding: 0px 0.8em;
@@ -72,25 +76,97 @@ body {
     display: none;
 }
 
-/* Mobile Menu */
-#nav-container #mobile-menu {
-    color: white;
-    display: block;
-    font-size: 48px;
-    margin: 0.25em 0.2em;
-    position: absolute;
-    right: 1%;
-    top: 0.1em;
-}
-#nav-container #mobile-menu:hover {
-    color: rgb(101, 145, 168);
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-#nav-container #nav #nav-ul .active > a {
+/* Disable pointer events for active section */
+#nav #nav-ul .active > a {
     color: rgb(74, 96, 98);
     pointer-events: none;
+}
+
+/* MOBILE MENU 
+ =================== */
+#mobile-menu {
+    color: rgb(224, 224, 224);
+    display: block;
+    font-size: 48px;
+    margin: 0.25em 0.3em;
+    position: fixed;
+    right: 0px;
+    top: 0.1em;
+}
+#mobile-menu:hover {
+    cursor: pointer;
+    color: rgb(77, 87, 132);
+}   
+
+/* Nav */
+#mobile-nav-container {
+    background-color: #06070fdb;
+    box-shadow: 1px 0px 10px 1px #000000;
+    height: auto;
+    padding: 12px 16px;
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    width: auto;
+    z-index: 101;
+}
+#mobile-nav-container ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+#mobile-nav {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#mobile-nav li a {
+    color: rgb(212, 212, 212);
+    font-size: 1.4rem;
+    margin: 8px 0px;
+    padding: 8px 0px;
+    text-decoration: none;
+    width: 100%;
+}
+#mobile-nav li a:hover {
+    background-color: rgba(102, 102, 102, 0.3);
+    border-radius: 10px;
+    color: rgb(17, 171, 179);
+    cursor: pointer;
+    padding: 12px 10px;
+    transition: 200ms;
+}
+
+/* Socials */
+#mobile-social {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#mobile-social ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+#mobile-social li a {
+    color: rgb(212, 212, 212);
+    font-size: 1.8rem;
+    margin: 8px 12px;
+    padding: 8px 6px;
+    text-decoration: none;
+    width: 100%;
+}
+#mobile-social li a:hover {
+    color: rgb(82, 117, 147);
+    cursor: pointer;
+    font-size: 1.9rem;
+    transition: 200ms;
 }
 
 

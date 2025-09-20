@@ -1,9 +1,9 @@
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
     navbarActiveSection();
-})
+});
 
 
-window.addEventListener('scroll', (event) => {
+window.addEventListener('scroll', () => {
     const jumpToTopButton = document.getElementById("jump-to-top");
 
     // Show or hide Jump to top button
@@ -26,4 +26,3 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
-
