@@ -12,14 +12,14 @@
     </a>
 </p>
 
-<p>
+<h3>
     Welcome to my personal page!
-</p>
+</h3>
 <p>
-    Here, you can find my summary, education, skills, blogs, and portfolio.
+    Here, you can find my 
+    <b>summary</b>, <b>education</b>, <b>skills</b>, <b>blogs</b>, and <b>portfolio</b>.
 </p>
 <p>
     You can visit my personal page
-    <a href="https://jo2eph.github.io">here</a>
+    <a href="https://jo2eph.github.io">here</a>.
 </p>
-
