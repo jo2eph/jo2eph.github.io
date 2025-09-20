@@ -18,11 +18,13 @@ mobileMenu.addEventListener('click', (event) => {
 
     mobileNavContainer.classList.toggle('hidden');
 
-    // Toggle social and nav visibility on small screens
+    // Below first breakpoint, show both navigation links and social media icons
     if (width < firstBreakpoint) {
         mobileNav.classList.toggle('hidden');
         mobileSocial.classList.toggle('hidden');
-    } else if (width < secondBreakpoint) {
+    } 
+    // Between first and second breakpoint, only show navigation links
+    else if (width < secondBreakpoint) {
         mobileSocial.classList.toggle('hidden');
     }
 });

@@ -54,9 +54,7 @@ function navbarActiveSection() {
         const element = document.getElementById(`nav-btn-${section}`)
 
         if (section == active) {
-            element.className = "active";
-        } else {
-            element.className = "";
+            element.classList.toggle("active");
         }
     })
 }

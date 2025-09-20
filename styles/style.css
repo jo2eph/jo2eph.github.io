@@ -119,13 +119,15 @@ body {
     width: 100%;
 }
 #mobile-nav {
+    border-bottom: 2px solid rgba(165, 165, 165, 0.499);
     margin: 0px;
-    padding: 0px;
+    padding: 16px;
+    padding-bottom: 24px;
     width: 100%;
 }
 #mobile-nav li a {
     color: rgb(212, 212, 212);
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
     margin: 8px 0px;
     padding: 8px 0px;
     text-decoration: none;
@@ -143,7 +145,7 @@ body {
 /* Socials */
 #mobile-social {
     margin: 0px;
-    padding: 0px;
+    padding: 6px;
     width: 100%;
 }
 #mobile-social ul {
@@ -165,12 +167,11 @@ body {
 #mobile-social li a:hover {
     color: rgb(82, 117, 147);
     cursor: pointer;
-    font-size: 1.9rem;
     transition: 200ms;
 }
 
 
-/* Tablet */
+/* TABLET */
 @media
     only screen
     and (min-width: 720px)
@@ -210,7 +211,7 @@ body {
 }
 
 
-/* Desktop */
+/* DESKTOP */
 @media
     only screen
     and (min-width: 1024px)
