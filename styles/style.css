@@ -21,6 +21,15 @@ body {
     display: none !important;
 }
 
+.code {
+    background-color: rgba(102, 102, 102, 0.3);
+    border-radius: 4px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 /* JUMP TO TOP
 ======================================== */
 #jump-to-top {

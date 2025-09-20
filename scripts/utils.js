@@ -71,3 +71,9 @@ function toggleDisplay(id) {
     }
 }
 
+
+// alert if link not existent
+function nonexistentAlert() {
+    alert("This link does not exist");
+}
+

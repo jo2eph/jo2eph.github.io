@@ -3,7 +3,7 @@ CSS for Blog Section
 */
 
 #blog {
-    background-color: rgb(166, 175, 183);
+    background-color: rgb(170, 168, 182);
     margin: 0px;
     padding: 16px;
 }
@@ -35,13 +35,29 @@ CSS for Blog Section
 }
 
 #blog-link {
-    color: rgb(25, 25, 25);
+    margin-top: 24px;
+}
+#blog-link a {
+    background-color: rgb(85, 129, 154);
+    border: 1px solid black;
+    border-radius: 16px;
+    box-shadow: 2px 3px 3px 0.8px #1f1f1fac;
     display: block;
     font-size: 1.5rem;
+    padding: 14px 108px;
     margin: 16px auto;
     text-align: center;
     text-decoration: none;
     width: fit-content;
+}
+#blog-link a {
+    color: rgb(220, 220, 220);
+}
+#blog-link a:hover {
+    background-color: rgb(45, 68, 88);
+    color: rgb(220, 220, 220);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #blogs-container {
@@ -55,8 +71,8 @@ CSS for Blog Section
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
-    max-width: 1800px;
+    width: 95%;
+    max-width: 1860px;
 }
 #blogs-container h3 {
     font-size: 1.6rem;
@@ -70,7 +86,7 @@ CSS for Blog Section
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 97%;
+    width: 100%;
 }
 
 .blog-card {
@@ -79,13 +95,21 @@ CSS for Blog Section
     border-radius: 14px;
     box-shadow: 3px 4px 13px 0px #0000007b;;
     margin: clamp(8px, 2vw, 16px);
+    margin-bottom: 20px;
     overflow: hidden;
     padding: clamp(8px, 2%, 16px);
-    width: clamp(100px, 90%, 720px);
+    width: clamp(100px, 87%, 760px);
 }
 .blog-card:hover {
     transform: scale(1.05);
     transition: 0.35s;
+}
+
+.blog-cover {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.578);
+    margin: 24px auto;
+    width: clamp(100px, 100%, 800px);
 }
 
 .blog-title {
@@ -148,29 +172,37 @@ CSS for Blog Section
 }
 
 
-/* Medium screens (tablets, 700px to 1349px)
+/* Medium screens
 */
 @media 
     only screen 
-    and (min-width: 700px)
-    and (max-width: 1349px)
+    and (min-width: 860px)
 {
+    #blogs-container {
+        width: 87%;
+    }
+
     #blog-cards-container {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
     }
 
     .blog-card {
-        width: clamp(380px, 80%, 800px);
+        width: clamp(200px, 45%, 800px);
+    }
+
+    .blog-cover {
+        margin: auto;
+        width: clamp(200px, 100%, 900px);
     }
 }
 
 
-/* Large screens (desktops, 1350px and up)
+/* Large screens
 */
 @media
     only screen
-    and (min-width: 1350px)
+    and (min-width: 1250px)
 {
     #blog-cards-container {
         flex-direction: row;
@@ -178,6 +210,10 @@ CSS for Blog Section
     }
 
     .blog-card {
-        width: clamp(300px, 30%, 600px);
+        width: clamp(300px, 30%, 900px);
+    }
+
+    .blog-cover {
+        width: clamp(200px, 100%, 900px);
     }
 }
