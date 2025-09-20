@@ -3,7 +3,7 @@ CSS for Blog Section
 */
 
 #blog {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(166, 175, 183);
     margin: 0px;
     padding: 16px;
 }
@@ -17,10 +17,31 @@ CSS for Blog Section
 
 #section-summary-blog {
     font-size: 1.4rem;
+    line-height: 1.5;
     margin: 32px auto;
     margin-top: clamp(8px, 2vw, 16px);
     text-align: center;
     width: clamp(280px, 80%, 1200px);
+}
+#section-summary-blog a {
+    color: rgb(52, 100, 197);
+    font-weight: bold;
+    text-decoration: none;
+}
+#section-summary-blog a:hover {
+    color: rgb(98, 146, 194);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#blog-link {
+    color: rgb(25, 25, 25);
+    display: block;
+    font-size: 1.5rem;
+    margin: 16px auto;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
 }
 
 #blogs-container {
@@ -55,9 +76,10 @@ CSS for Blog Section
 .blog-card {
     background-color: white;
     border: 1px solid rgba(65, 64, 69, 0.343);
-    border-radius: 10px;
+    border-radius: 14px;
     box-shadow: 3px 4px 13px 0px #0000007b;;
     margin: clamp(8px, 2vw, 16px);
+    overflow: hidden;
     padding: clamp(8px, 2%, 16px);
     width: clamp(100px, 90%, 720px);
 }

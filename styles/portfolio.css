@@ -5,9 +5,9 @@ CSS for Portfolio Section
 /* PORTFOLIO
 ======================================================= */
 #portfolio {
-    background-color: rgb(208, 189, 189);
+    background-color: rgb(142, 158, 181);
     margin: 0px;
-    padding: 16px;
+    padding: 28px;
 }
 
 #section-name-portfolio {
@@ -15,4 +15,37 @@ CSS for Portfolio Section
     font-size: 3rem;
     padding: 3.5vw 0px 0.25em 0px;
     text-align: center;
+}
+
+#section-summary-portfolio {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 32px auto;
+    margin-top: clamp(8px, 2vw, 16px);
+    text-align: center;
+    width: clamp(120px, 80%, 1200px);
+}
+
+#portfolio-container {
+    background-color: rgba(194, 220, 233, 0.188);
+    border: 1px solid rgba(65, 64, 69, 0.343);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 32px;
+    margin-top: clamp(8px, 2vw, 16px);
+    padding: clamp(8px, 2vw, 16px);
+    justify-content: center;
+    width: 90%;
+    max-width: 1800px;
+}
+
+.project-card {
+    border: 1px solid black;
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin: 16px;
+    padding: 24px;
+    word-wrap: break-word;
 }
