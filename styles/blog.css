@@ -21,7 +21,7 @@ CSS for Blog Section
     margin: 32px auto;
     margin-top: clamp(8px, 2vw, 16px);
     text-align: center;
-    width: clamp(280px, 80%, 1200px);
+    width: clamp(100px, 85%, 1200px);
 }
 #section-summary-blog a {
     color: rgb(52, 100, 197);
@@ -36,6 +36,8 @@ CSS for Blog Section
 
 #blog-link {
     margin-top: 24px;
+    margin: 16px auto;
+    width: clamp(50px, 60%, 400px);
 }
 #blog-link a {
     background-color: rgb(85, 129, 154);
@@ -43,12 +45,11 @@ CSS for Blog Section
     border-radius: 16px;
     box-shadow: 2px 3px 3px 0.8px #1f1f1fac;
     display: block;
-    font-size: 1.5rem;
-    padding: 14px 108px;
-    margin: 16px auto;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    padding: 14px clamp(16px, 4vw, 108px);
+    margin: 0px auto;
     text-align: center;
     text-decoration: none;
-    width: fit-content;
 }
 #blog-link a {
     color: rgb(239, 239, 239);
