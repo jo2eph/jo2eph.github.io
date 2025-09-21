@@ -50,3 +50,4 @@ window.addEventListener('resize', () => {
     mobileNav.classList.add('hidden');
     mobileSocial.classList.add('hidden');
 });
+

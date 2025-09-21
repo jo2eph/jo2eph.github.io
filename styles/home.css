@@ -10,6 +10,7 @@ CSS for Home Section
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     height: 100vh;
