@@ -40,7 +40,7 @@ CSS for Blog Section
     width: clamp(50px, 60%, 400px);
 }
 #blog-link a {
-    background-color: rgb(85, 129, 154);
+    background-color: rgb(47, 114, 208);
     border: 1px solid black;
     border-radius: 16px;
     box-shadow: 2px 3px 3px 0.8px #1f1f1fac;
