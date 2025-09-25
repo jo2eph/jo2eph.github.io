@@ -85,7 +85,7 @@ CSS for Blog Section
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     width: 100%;
 }
