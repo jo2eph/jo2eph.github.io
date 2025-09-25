@@ -1,23 +1,23 @@
 /* 
-CSS for Portfolio Section
+CSS for Projects Section
 */
 
-/* PORTFOLIO
+/* PROJECTS
 ======================================================= */
-#portfolio {
+#projects {
     background-color: rgb(142, 158, 181);
     margin: 0px;
     padding: 28px;
 }
 
-#section-name-portfolio {
+#section-name-projects {
     color: rgb(0, 0, 0);
     font-size: 3rem;
     padding: 3.5vw 0px 0.25em 0px;
     text-align: center;
 }
 
-#section-summary-portfolio {
+#section-summary-projects {
     font-size: clamp(1.1rem, 15vw, 1.4rem);
     line-height: 1.5;
     margin: 32px auto;
@@ -26,8 +26,8 @@ CSS for Portfolio Section
     width: clamp(120px, 80%, 1200px);
 }
 
-/* PORTFOLIO PROJECT CONTAINER */
-#portfolio-container {
+/* PROJECTS CONTAINER */
+#projects-container {
     background-color: rgba(194, 220, 233, 0.188);
     border: 1px solid rgba(65, 64, 69, 0.343);
     border-radius: 10px;
@@ -140,7 +140,7 @@ CSS for Portfolio Section
     only screen
     and (min-width: 670px)
 {
-    #portfolio-container {
+    #projects-container {
         width: 90%;
     }
 
@@ -166,7 +166,7 @@ CSS for Portfolio Section
     only screen
     and (min-width: 1120px)
 {
-    #portfolio-container {
+    #projects-container {
         width: 87%;
     }
 
