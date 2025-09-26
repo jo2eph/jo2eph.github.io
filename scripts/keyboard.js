@@ -9,8 +9,10 @@ window.addEventListener('keydown', (event) => {
     } else if (keyPressed == "3") {
         scrollToSection("blog");
     } else if (keyPressed == "4") {
+        scrollToSection("education");
+    } else if (keyPressed == "5"){
         scrollToSection("projects");
-    } else if (keyPressed == "9"){
+    } else if (keyPressed == "9") {
         scrollToSection("footer");
     }
 });
