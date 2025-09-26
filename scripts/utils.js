@@ -5,7 +5,7 @@ Some helpful functions
 const home = document.getElementById("home");
 const about = document.getElementById("about");
 const blog = document.getElementById("blog");
-const portfolio = document.getElementById("portfolio");
+const projects = document.getElementById("projects");
 
 
 // Check if, given an id, an element is hidden
@@ -27,17 +27,17 @@ function isHidden(id) {
 const homeBound = home.getBoundingClientRect().top;
 const aboutBound = about.getBoundingClientRect().top;
 const blogBound = blog.getBoundingClientRect().top;
-const portfolioBound = portfolio.getBoundingClientRect().top;
+const projectsBound = projects.getBoundingClientRect().top;
 
 function navbarActiveSection() {
-    const sections = ['home', 'about', 'blog', 'portfolio'];
+    const sections = ['home', 'about', 'blog', 'projects'];
 
     var y = scrollY;
     let active = "";
 
     switch (y) {
-        case (y >= portfolioBound):
-            active = "portfolio";
+        case (y >= projectsBound):
+            active = "projects";
             break;
         case (y >= blogBound):
             active = "blog";
@@ -77,3 +77,13 @@ function nonexistentAlert() {
     alert("This link does not exist");
 }
 
+
+// Given a string ID, scroll to that section
+function scrollToSection(id) {
+    const targetElement = document.getElementById(id);
+
+    // Check if target element exist before scrolling to it
+    if (targetElement) {
+        targetElement.scrollIntoView();
+    }
+}

@@ -51,3 +51,51 @@ window.addEventListener('resize', () => {
     mobileSocial.classList.add('hidden');
 });
 
+
+// Scroll to section when navbar menu section links are clicked
+const homeButton = document.getElementById("nav-btn-home");
+const aboutButton = document.getElementById("nav-btn-about");
+const educationButton = document.getElementById("nav-btn-education");
+const blogButton = document.getElementById("nav-btn-blog");
+const projectsButton = document.getElementById("nav-btn-projects");
+
+homeButton.addEventListener('click', () => {
+    scrollToSection("home");
+});
+aboutButton.addEventListener('click', () => {
+    scrollToSection("about");
+});
+educationButton.addEventListener('click', () => {
+    scrollToSection("education");
+});
+blogButton.addEventListener('click', () => {
+    scrollToSection("blog");
+});
+projectsButton.addEventListener('click', () => {
+    scrollToSection("projects");
+});
+
+
+// Mobile version
+const mobileHomeButton = document.getElementById("mobile-nav-home");
+const mobileAboutButton = document.getElementById("mobile-nav-about");
+const mobileEducationButton = document.getElementById("mobile-nav-education");
+const mobileBlogButton = document.getElementById("mobile-nav-blog");
+const mobileProjectsButton = document.getElementById("mobile-nav-projects");
+
+mobileHomeButton.addEventListener('click', () => {
+    scrollToSection("home");
+});
+mobileAboutButton.addEventListener('click', () => {
+    scrollToSection("about");
+});
+mobileEducationButton.addEventListener('click', () => {
+    scrollToSection("education");
+});
+mobileBlogButton.addEventListener('click', () => {
+    scrollToSection("blog");
+});
+mobileProjectsButton.addEventListener('click', () => {
+    scrollToSection("projects");
+});
+

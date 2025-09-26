@@ -12,15 +12,13 @@ function toggleJumpToTopVisibility() {
 
 
 window.addEventListener('load', () => {
-    navbarActiveSection();
     toggleJumpToTopVisibility();
+    navbarActiveSection();
 });
 
 
 window.addEventListener('scroll', () => {
     toggleJumpToTopVisibility();
-
-    // Highlight which section the user currently is in
     navbarActiveSection();
 });
 
