@@ -7,6 +7,12 @@ const about = document.getElementById("about");
 const blog = document.getElementById("blog");
 const projects = document.getElementById("projects");
 
+// Set or remove active class for navbar
+const homeBound = home.getBoundingClientRect().top;
+const aboutBound = about.getBoundingClientRect().top;
+const blogBound = blog.getBoundingClientRect().top;
+const projectsBound = projects.getBoundingClientRect().top;
+
 
 // Check if, given an id, an element is hidden
 function isHidden(id) {
@@ -22,12 +28,6 @@ function isHidden(id) {
     }
 }
 
-
-// Set or remove active class for navbar
-const homeBound = home.getBoundingClientRect().top;
-const aboutBound = about.getBoundingClientRect().top;
-const blogBound = blog.getBoundingClientRect().top;
-const projectsBound = projects.getBoundingClientRect().top;
 
 function navbarActiveSection() {
     const sections = ['home', 'about', 'blog', 'projects'];
