@@ -91,7 +91,7 @@ CSS for Blog Section
 }
 
 .blog-card {
-    background-color: white;
+    background-color: rgb(224, 224, 224);
     border: 1px solid rgba(65, 64, 69, 0.343);
     border-radius: 14px;
     box-shadow: 3px 4px 13px 0px #0000007b;;
