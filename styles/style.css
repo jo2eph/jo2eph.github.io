@@ -32,7 +32,7 @@ body {
 
 /* JUMP TO TOP
 ======================================== */
-#jump-to-top{
+#jump-to-top {
     background-color: hsl(204, 68%, 14%);
     border: none;
     border-radius: 50%;
@@ -54,6 +54,35 @@ body {
 #jump-to-top:hover {
     color: rgba(73, 148, 195, 0.8);
     transition: 300ms;
+}
+
+/* THEME 
+======================================== */
+#theme {
+    color: rgba(7, 21, 59, 0.88);
+    font-size: 56px;
+    position: fixed;
+    bottom: 10px;
+    left: 14px;
+    width: 60px;
+    z-index: 1000;
+}
+#theme:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 16px;
+    color: rgba(7, 21, 59, 0.88);
+    cursor: pointer;
+    transition: 120ms;
+}
+
+.theme-option:hover {
+    color: white;
+}
+
+#theme-button:hover {
+    background-color: rgb(130, 130, 130);
+    border-radius: 50%;
+    color: black;
 }
 
 /* NAVBAR
