@@ -12,7 +12,7 @@ CSS for Home Section
     background-size: cover;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 85vh;
     min-height: 560px;
     overflow: hidden;
     text-align: center;
@@ -49,21 +49,6 @@ CSS for Home Section
     text-align: center;
     text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.7);
     width: 100%;
-}
-
-/* SCROLL DOWN
-======================================== */
-#scroll-down {
-    aspect-ratio: 1;
-    color: rgba(70, 237, 215, 0.809);
-    font-size: 70px;
-    position: absolute;
-    bottom: 1vh;
-}
-#scroll-down:hover {
-    color: rgba(188, 242, 255, 0.75);
-    transition: 300ms;
-    transform: scale(1.1);
 }
 
 
