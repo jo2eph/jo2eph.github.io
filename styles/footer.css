@@ -1,85 +1,11 @@
 /*
-CSS for Footer Section
+CSS for the footer section
 */
 
 footer {
-    color: rgb(148, 148, 148);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: stretch;
-    margin-bottom: 64px;
-    padding: 48px 16px;
-}
-
-/* Left */
-footer #footer-left,
-footer #footer-right {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: stretch;
-    order: 0;
-}
-
-footer #footer-left {
+    background-color: rgb(34, 34, 34);
+    color: rgb(240, 240, 240);
+    padding: 20px 0;
+    text-align: center;
     font-size: 14px;
-    flex-basis: 50%;
-    margin-left: 16px;
-}
-
-footer #footer-left a {
-    color: rgb(110, 174, 226);
-    text-decoration: none;
-}
-footer #footer-left a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/* Right */
-footer #footer-right {
-    align-self: center;
-    margin: 1em 0px;
-}
-
-footer #footer-right .socials {
-    list-style-type: none;
-}
-
-footer #footer-right .socials li {
-    float: left;
-    margin: 12px 10px;
-}
-
-footer #footer-right .socials li a {
-    color: rgb(140, 140, 140);
-    font-size: max(2.4vw, 24px);
-    :hover {
-        color:rgb(213, 213, 213);
-        cursor: pointer;
-    }
-}
-
-@media
-    only screen
-    and (min-width: 376px) 
-{
-    footer {
-        flex-direction: row;
-        align-items: space-between;
-    }
-
-    footer #footer-left {
-        font-size: min(4vw, 18px);
-        margin-left: 0px;
-        padding: 8px 1em;
-    }
-
-    footer #footer-right {
-        margin: 0px 8px;
-    }
 }

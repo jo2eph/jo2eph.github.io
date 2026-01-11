@@ -7,918 +7,175 @@
     <meta name="description" content="Personal Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://jo2eph.github.io/">
-    <title>Joseph Lee</title>
+    <title>Joseph Lee | Applied Mathematics & Data Analysis </title>
 
-    <!-- Style
+    <!-- CSS
     ============================================== -->
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/blog.css">
-    <link rel="stylesheet" href="./styles/learn.css">
-    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/animate.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/jumpToTop.css">
+    <link rel="stylesheet" href="./styles/intro.css">
+    <link rel="stylesheet" href="./styles/section1.css">
+    <link rel="stylesheet" href="./styles/section2.css">
+    <link rel="stylesheet" href="./styles/section3.css">
+    <link rel="stylesheet" href="./styles/section4.css">
+    <link rel="stylesheet" href="./styles/section5.css">
     <link rel="stylesheet" href="./styles/footer.css">
-
-    <!-- Icon
+    
+    <!-- ICON
     ============================================== -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     
-    <!-- Others
+    <!-- FONTS
+    ============================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- OTHERS
     ============================================== -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- JUMP TO TOP -->
-    <div id="jump-to-top">
-        <i class="bx bxs-up-arrow-circle"></i>
-    </div>
-
+    <script defer src="./scripts/load.js"></script>
     
-    <!-- NAVBAR 
-    ============================================== -->
-    <nav id="nav-container">
-        <div id="logo">
-            <a href="https://jo2eph.github.io/" id="logo-icon" title="Joseph Lee">
-                <i class="bx bxs-home" ></i>
-            </a>
-        </div>
-
-        <div id="nav">
-            <ul id="nav-ul">
-                <li id="nav-btn-home">
-                    <a href="javascript:void(0)">
-                        Home
-                    </a>
-                </li>
-                <li id="nav-btn-about">
-                    <a href="javascript:void(0)">
-                        About
-                    </a>
-                </li>
-                <li id="nav-btn-education">
-                    <a href="javascript:void(0)">
-                        Education
-                    </a>
-                </li>
-                <li id="nav-btn-blog">
-                    <a href="javascript:void(0)">
-                        Blog
-                    </a>
-                </li>
-                <li id="nav-btn-projects">
-                    <a href="javascript:void(0)">
-                        Projects
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div id="socials">
-            <ul id="socials-ul">
-                <li>
-                    <a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
-                        title="Send me an email">
-                        <i class="bx bxs-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/jo2eph/" target="_blank"
-                        rel="noopener noreferrer" title="Connect with me on LinkedIn">
-                        <i class="bx bxl-linkedin-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
-                        title="Follow me on GitHub">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <!-- MOBILE MENU -->
-        <div id="mobile-menu" title="Toggle Mobile Menu">
-            <i class="bx bx-menu" id="mobile-menu-button"></i>
-            
-            <div id="mobile-nav-container" class="hidden">
-
-                <!-- SECTION LINKS -->
-                <div id="mobile-nav" class="hidden">
-                    <ul>
-                        <li id="mobile-nav-home">
-                            <a href="javascript:void(0)">
-                                Home
-                            </a>
-                        </li>
-                        <li id="mobile-nav-about">
-                            <a href="javascript:void(0)">
-                                About
-                            </a>
-                        </li>
-                        <li id="mobile-nav-education">
-                            <a href="javascript:void(0)">
-                                Education
-                            </a>
-                        </li>
-                        <li id="mobile-nav-blog">
-                            <a href="javascript:void(0)">
-                                Blog
-                            </a>
-                        </li>
-                        <li id="mobile-nav-projects">
-                            <a href="javascript:void(0)">
-                                Projects
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- SOCIAL LINKS -->
-                <div id="mobile-social" class="hidden">
-                    <ul>
-                        <li>
-                            <a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
-                                title="Send me an email">
-                                <i class="bx bxs-envelope"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/jo2eph/" target="_blank"
-                                rel="noopener noreferrer" title="Connect with me on LinkedIn">
-                                <i class="bx bxl-linkedin-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
-                                title="Follow me on GitHub">
-                                <i class="bx bxl-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- NAVIGATION MENU -->
+    <nav id="navbar-container">
+        <div id="navbar-left">
+            <div id="logo">
+                <a href="https://jo2eph.github.io/">
+                    <img src="./assets/favicon.ico" alt="Icon Image">
+                    <span>
+                        JOSEPH LEE
+                    </span>
+                </a>
             </div>
-
+        </div>
+        <div id="navbar-center">
+            <ul id="navbar-center-menu">
+                <li class="navbar-links" id="nav-btn-1">
+                    <a href="javascript:void(0)">
+                        ABOUT
+                    </a>
+                </li>
+                <li class="navbar-links" id="nav-btn-2">
+                    <a href="javascript:void(0)">
+                        EDUCATION
+                    </a>
+                </li>
+                <li class="navbar-links" id="nav-btn-3">
+                    <a href="javascript:void(0)">
+                        BLOG
+                    </a>
+                </li>
+                <li class="navbar-links" id="nav-btn-4">
+                    <a href="javascript:void(0)">
+                        PROJECTS
+                    </a>
+                </li>
+                <li class="navbar-links" id="nav-btn-5">
+                    <a href="javascript:void(0)">
+                        CONTACTS
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="navbar-right">
+            
         </div>
     </nav>
 
-    <!-- HOME 
-     ============================================== -->
-    <header id="home">
+    <!-- JUMP TO TOP BUTTON-->
+    <div id="jump-to-top">
+        <a href="javascript:void(0)" title="Scroll to top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+    </div>
 
-        <!-- Banner -->
-        <div id="banner">
-
+    <!-- INTRO SECTION -->
+    <section id="intro">
+        <div class="fade-in" id="intro-content">
             <h1>
                 Joseph Lee
             </h1>
-
-            <h3>
-                Data Scientist, Mathematician, Programmer, Lifelong Learner
-            </h3>
-            <h3>
+            <p>
+                Data Scientist, Software Developer, Lifelong Learner
+            </p>
+            <p>
                 Nice to meet you!
-            </h3>
-
+            </p>
+            <a href="javascript:void(0)" title="Scroll down">
+                <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
         </div>
-
-    </header>
-
-    <hr>
-
-    <!-- ABOUT
-     ============================================== -->
-    <section id="about">
-
-        <h2 id="section-name-about">
-            About Me
-        </h2>
-        
-        <div id="about-container">
-
-            <!-- SECTION 1 -->
-            <div id="about-section-1">
-                <div class="card" id="profile">
-                    <img src="./assets/photo.jpg" alt="Profile Picture" title="Joseph Lee">
-                    <h3>
-                        Joseph Lee
-                    </h3>
-                    <ul id="contacts">
-                        <li>
-                            <span>
-                                Email:
-                            </span>
-                            <a href="mailto:junhyuk.x.lee@gmail.com">
-                                junhyuk.x.lee@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <span>
-                                GitHub:
-                            </span>
-                            <a href="https://github.com/jo2eph">
-                                github.com/jo2eph
-                            </a>
-                        </li>
-                        <li>
-                            <span>
-                                LinkedIn:
-                            </span>
-                            <a href="https://www.linkedin.com/in/jo2eph/">
-                                linkedin.com/in/jo2eph
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="card" id="summary">
-                    <h3>
-                        Summary
-                    </h3>
-                    <p>
-                        Hello, I am <b>Junhyuk Lee</b>. Many of you may know me as Joseph.
-                    </p>
-                    <p>
-                        I graduated from the 
-                        <b>University of California, San Diego</b> (<b>UCSD</b>)
-                        with a major in <b>Applied Mathematics</b>.
-                    </p>
-                    <p>
-                        I&apos;m a <b>curious and passionate learner</b> with a wide range of interests.
-                        <br>
-                        My interests primarily lie in <b>data science &amp; statistics</b>, <b>machine learning</b>,
-                        <b>cryptography &amp; cybersecurity</b>, and <b>applying math</b> to solve real-world problems.
-                    </p>
-                    <p>
-                        Beyond academics, I enjoy a variety of creative and active pursuits.
-                        <br>
-                        I enjoy reading, writing stories, drawing, playing video games, and listening to music.
-                        <br>
-                        I like to workout, play badminton, and read philosophy.
-                        I also regularly write in my blog, which you can find <a href="https://jo2eph.github.io/blog/" title="Blog Main Page">here</a>.
-                    </p>
-                    <p>
-                        I&apos;m always looking forward to learn and grow. 
-                        <br>
-                        Feel free to connect with me!
-                    </p>
-                </div>
-            </div>
-
-            <!-- SECTION 2 -->
-            <div id="about-section-2">
-                <div class="card" id="education">
-                    <h3>
-                        Education
-                    </h3>
-
-                    <ul>
-                        <li>
-                            <span>School:</span>
-                            University of California, San Diego
-                        </li>
-                        <li>
-                            <span>Major:</span>
-                            B.S. Applied Mathematics
-                        </li>
-                        <li>
-                            <span>Clubs:</span>
-                            <ul id="clubs-ul">
-                                <li>Association for Computing Machinery (ACM)</li>
-                                <li>Society of Asian Scientists and Engineers (SASE)</li>
-                                <li>Society of Undergraduate Math Students (SUMS)</li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <img src="./assets/ucsd.png" alt="UCSD logo" title="UC San Diego">
-                </div>
-
-                <div class="card" id="courses">
-                    <h3>
-                        Relevant Courses
-                    </h3>
-                    <div id="courses-container">
-                        <div id="courses-col-1">
-                            <ul>
-                                <li>Applied Linear Algebra</li>
-                                <li>Critical Writing</li>
-                                <li>Computational Statistics</li>
-                                <li>Cryptography</li>
-                                <li>Data Analytics for Social Sciences</li>
-                                <li>Data Science in Practice</li>
-                                <li>Dynamic Systems</li>
-                                <li>Exploratory Data Analysis &amp; Inference</li>
-                                <li>Graph Theory</li>
-                            </ul>
-                        </div>
-                        <div id="courses-col-2">
-                            <ul>
-                                <li>Managing Diverse Teams</li>
-                                <li>Mathematical Software</li>
-                                <li>MATLAB for Engineering</li>
-                                <li>Numerical Methods</li>
-                                <li>Optimization for Data Science</li>
-                                <li>Principles of Data Science</li>
-                                <li>Programming: Python + Java</li>
-                                <li>Statistics &amp; Probability</li>
-                                <li>Vector Calculus</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SECTION 3 -->
-            <div id="about-section-3">
-                <div class="card" id="skills">
-                    <h3>
-                        Skills
-                    </h3>
-                    <div id="skills-container">
-                        <div id="interpersonal-skills">
-                            <h4>
-                                Interpersonal Skills
-                            </h4>
-                            <ul class="skills-ul">
-                                <li>Attention to detail</li>
-                                <li>Collaboration</li>
-                                <li>Critical thinking</li>
-                                <li>Creativity</li>
-                                <li>Diverse teams</li>
-                                <li>Leadership</li>
-                                <li>Organization skills</li>
-                                <li>Project management</li>
-                                <li>Presentation skills</li>
-                                <li>Public Speaking</li>
-                                <li>Teaching</li>
-                                <li>Teamwork</li>
-                                <li>Written &amp; Verbal Communication</li>
-                            </ul>
-                        </div>
-                        <div id="languages">
-                            <h4>
-                                Languages
-                            </h4>
-                            <ul class="skills-ul">
-                                <li>C</li>
-                                <li>C++</li>
-                                <li>CSS</li>
-                                <li>HTML</li>
-                                <li>Java</li>
-                                <li>JavaScript</li>
-                                <li>Julia</li>
-                                <li>MATLAB</li>
-                                <li>Python</li>
-                                <li>R</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                        <div id="technical-skills">
-                            <h4>
-                                Technical Skills
-                            </h4>
-                            <ul class="skills-ul">
-                                <li>Bash</li>
-                                <li>Data Analysis</li>
-                                <li>Data Science</li>
-                                <li>Data Visualization</li>
-                                <li>Data Wrangling</li>
-                                <li>Git</li>
-                                <li>GitHub</li>
-                                <li>Machine Learning</li>
-                                <li>Mathematics</li>
-                                <li>MS Office Suite</li>
-                                <li>NumPy</li>
-                                <li>Pandas</li>
-                                <li>Regular Expressions</li>
-                                <li>Statistics</li>
-                                <li>Web Development</li>
-                                <li>Web Scraping</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
     </section>
 
-    <hr>
+    <main>
+        <!-- SECTION 1: ABOUT SECTION -->
+        <section id="section-1">
+            <div id="about-container">
+                <h2>
+                    ABOUT ME
+                </h2>
+                <img src="./assets/photo.jpg" alt="Picture">
+                <p>
+                    Hello! I&apos;m <b>Junhyuk Lee</b> (Joseph).
+                    <br>
+                    I graduated from the 
+                    <a href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer">
+                        <b>University of California, San Diego</b></a>
+                    (UCSD) with a degree in <b>Applied Mathematics</b>.
+                </p>
+                <p>
+                    I am passionate about applying mathematics and programming to solve real-world problems.
+                    I am also interested in data science, statistics, and cryptography.
+                </p>
+                <p>
+                    In my free time, I enjoy reading, drawing, playing games, working out, practicing parkour, and learning new skills.
+                </p>
+            </div>
+        </section>
 
-    <!-- EDUCATION
-     ============================================== -->
-    <section id="">
+        <!-- SECTION 2: EDUCATION SECTION -->
+        <section id="section-2">
+            <div id="education-container">
+                <h2>
+                    EDUCATION
+                </h2>
+            </div>
+        </section>
 
-        <h2 id="">
+        <!-- SECTION 3: EXPERIENCE SECTION -->
+        <section id="section-3">
+            <h2>
+                BLOG
+            </h2>
 
-        </h2>
+        </section>
 
-    </section>
+        <!-- SECTION 4: PROJECTS SECTION -->
+        <section id="section-4">
+            <h2>
+                PROJECTS
+            </h2>
 
-    <hr>
+        </section>
 
-    <!-- BLOG
-     ============================================== -->
-    <section id="blog">
-
-        <h2 id="section-name-blog">
-            Blog
-        </h2>
-
-        <div id="section-summary-blog">
-            <p>
-                This is my personal blog, where I share my 
-                thoughts, experiences, and knowledge on various topics,
-                <br>
-                including <b>data science &amp; statistics</b>, <b>programming</b>, <b>mathematics</b>, and more.
-            </p>
-            <p>
-                I also share my personal experiences and insights on 
-                <b>learning</b>, <b>productivity</b>, and <b>self-improvement</b>.
-            </p>
-            <p>
-                Click the button below to see all of my past blogs:
-            </p>
-            <p id="blog-link">
-                <a href="https://jo2eph.github.io/blog/">
-                    Blog Page
-                </a>
-            </p>
-        </div>
-
-        <div id="blogs-container">
-
-            <h3>
-                Highlighted Blogs
-            </h3>
+        <!-- SECTION 5: CONTACT SECTION -->
+        <section id="section-5">
+            <h2>
+                CONTACT
+            </h2>
             
-            <div id="blog-cards-container">
+        </section>
+    </main>
 
-                <!-- BLOG 1 -->
-                <div class="blog-card">
-                    <a href="https://jo2eph.github.io/blog/posts/2025/09_15_communication_skill/" 
-                        title="The One Skill Every STEM Major Needs - But No One Teaches">
-                        <img src="./assets/blogs/09_15_2025_The_One_Skill_Every_STEM_Major_Needs.jpg" 
-                            alt="The One Skill Every STEM Major Needs - But No One Teaches" class="blog-cover">
-                    </a>
-
-                    <div class="blog-description">
-                        <div class="blog-title">
-                            <h4>
-                                <a href="https://jo2eph.github.io/blog/posts/2025/09_15_communication_skill/" 
-                                    title="The One Skill Every STEM Major Needs - But No One Teaches">
-                                    The One Skill Every STEM Major Needs - But No One Teaches
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="blog-summary">
-                            This one skill is the most important, but most neglected, skill for STEM majors.
-                        </div>
-                        <div class="blog-author-container">
-                            <img src="./assets/photo.jpg" alt="Author: Joseph Lee">
-
-                            <div class="blog-author">
-                                <div class="blog-author-name">
-                                    Joseph Lee
-                                </div>
-                                <div class="blog-publishing-date">
-                                    September 15, 2025
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-tags">
-                            <span class="tag">Communication</span>
-                            <span class="tag">Skills</span>
-                            <span class="tag">STEM</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BLOG 2 -->
-                <div class="blog-card">
-                    <a href="https://jo2eph.github.io/blog/posts/2025/09_15_communication_skill/" 
-                        title="A Reflection on UChicago&apos;s &quot;Craft of Writing Effectively&quot;">
-                        <img src="./assets/blogs/09_18_2025_Reflection_on_UChicago_Craft_of_Writing_Effectively.png" 
-                            alt="A Reflection on UChicago&apos;s &quot;Craft of Writing Effectively&quot;" class="blog-cover">
-                    </a>
-
-                    <div class="blog-description">
-                        <div class="blog-title">
-                            <h4>
-                                <a href="https://jo2eph.github.io/blog/posts/2025/09_18_reflection_on_uchicago_writing/" 
-                                    title="A Reflection on UChicago&apos;s &quot;Craft of Writing Effectively&quot;">
-                                    A Reflection on UChicago&apos;s &quot;Craft of Writing Effectively&quot;
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="blog-summary">
-                            A reflection on the University of Chicago&apos;s &quot;The Craft of Writing Effectively&quot;.
-                        </div>
-                        <div class="blog-author-container">
-                            <img src="./assets/photo.jpg" alt="Author: Joseph Lee">
-
-                            <div class="blog-author">
-                                <div class="blog-author-name">
-                                    Joseph Lee
-                                </div>
-                                <div class="blog-publishing-date">
-                                    September 18, 2025
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-tags">
-                            <span class="tag">Writing</span>
-                            <span class="tag">UChicago</span>
-                            <span class="tag">Reflection</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BLOG 3 -->
-                <div class="blog-card">
-                    <a href="https://jo2eph.github.io/blog/posts/2025/09_22_cybersecurity_for_everyone/" 
-                        title="Cybersecurity for Everyone: Protect Yourself Online Without Being a Tech Expert">
-                        <img src="./assets/blogs/09_22_2025_Cybersecurity_for_Everyone.png" 
-                            alt="Cybersecurity for Everyone: Protect Yourself Online Without Being a Tech Expert" class="blog-cover">
-                    </a>
-
-                    <div class="blog-description">
-                        <div class="blog-title">
-                            <h4>
-                                <a href="https://jo2eph.github.io/blog/posts/2025/09_22_cybersecurity_for_everyone/" 
-                                    title="Cybersecurity for Everyone: Protect Yourself Online Without Being a Tech Expert">
-                                    Cybersecurity for Everyone: <br>
-                                    Protect Yourself Online Without Being a Tech Expert
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="blog-summary">
-                            Cybersecurity is for everyone.
-                            Simple tips and habits to stay safe online.
-                        </div>
-                        <div class="blog-author-container">
-                            <img src="./assets/photo.jpg" alt="Author: Joseph Lee">
-
-                            <div class="blog-author">
-                                <div class="blog-author-name">
-                                    Joseph Lee
-                                </div>
-                                <div class="blog-publishing-date">
-                                    September 22, 2025
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-tags">
-                            <span class="tag">Cybersecurity</span>
-                            <span class="tag">Cryptography</span>
-                            <span class="tag">Online Safety</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-    <hr>
-
-    <!-- PROJECTS
-     ============================================== -->
-    <section id="projects">
-        
-        <h2 id="section-name-projects">
-            Projects
-        </h2>
-
-        <div id="section-summary-projects">
-            This is a collection of my projects, 
-            from small scripts to full-scale applications.
-            <br>
-            This includes projects from my coursework, personal projects, and other creative works.
-            <br>
-            Note that some projects may be private or proprietary, and thus not included here.
-            <br>
-            <b>This section is ALWAYS a work in progress</b> 
-            as new projects are added and old ones are updated.
-        </div>
-
-        <div id="projects-container">
-
-            <!-- PROJECT 1 -->
-            <div class="project-card">
-                <img src="./assets/placeholder.png" 
-                    alt="Understanding Loan Approval: A Data Analysis" 
-                    title="Understanding Loan Approval: A Data Analysis">
-                <div class="project-description-container">
-                    <div class="project-title">
-                        <h3>
-                            Understanding Loan Approval: A Data Analysis
-                        </h3>
-                    </div>
-                    <div class="project-tools-skills">
-                        <p>
-                            Git, GitHub, Jupyter Notebook, Matplotlib, NumPy, Pandas, Python, Seaborn, Scikit-learn
-                        </p>
-                    </div>
-                    <div class="project-summary">
-                        <p>
-                            This is my final project for Data Science in Practice.
-                            <br>
-                            I collaborated with a cross-functional team to analyze the relationship between an applicant&apos;s credit background and their loan approval status.
-                            <br>
-                            We cleaned the data for missing entries, performed Exploratory Data Analysis (EDA), utilized data visualizations, and constructed a model. 
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/jo2eph/Group119_FA23/tree/master" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="GitHub Repo">
-                            GitHub
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Data Science</span>
-                        <span class="project-tag">Group Project</span>
-                        <span class="project-tag">Loan</span>
-                        <span class="project-tag">Jupyter</span>
-                        <span class="project-tag">NumPy</span>
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Pandas</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 2 -->
-            <div class="project-card">
-                <img src="./assets/placeholder.png" 
-                    alt="Pokemon API Data Analysis Project" 
-                    title="Pokemon API Data Analysis Project">
-                <div class="project-description-container">
-                    <div class="project-title">
-                        <h3>
-                            Pokemon API Data Analysis Project
-                        </h3>
-                    </div>
-                    <div class="project-tools-skills">
-                        <p>
-                            API, CSS, HTML, Git, GitHub, JavaScript, Jupyter Notebook, NumPy, Pandas, Python, Requests, Scikit-learn
-                        </p>
-                    </div>
-                    <div class="project-summary">
-                        <p>
-                            This is a data science project that uses the public Pokemon RESTful API.
-                            <br>
-                            I used the Python <span class="code">requests</span> library to retrieve data from the API, 
-                            <br>
-                            and use it to create the dataset, clean the data, perform EDA, visualize the data, 
-                            <br>
-                            answer a few data analysis questions, and build machine learning models.
-
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/jo2eph/pokemon_data_analysis" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="GitHub Repo">
-                            GitHub
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">API</span>
-                        <span class="project-tag">Data Science</span>
-                        <span class="project-tag">Jupyter</span>
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Pokemon</span>
-                        <span class="project-tag">Machine Learning</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 3 -->
-            <div class="project-card">
-                <img src="./assets/projects/K-Means-clustering-lecture.png" 
-                    alt="K-Means Clustering Lecture" 
-                    title="K-Means Clustering Lecture">
-                <div class="project-description-container">
-                    <div class="project-title">
-                        <h3>
-                            K-Means Clustering Lecture
-                        </h3>
-                    </div>
-                    <div class="project-tools-skills">
-                        <p>
-                            Git, GitHub, Julia, Jupyter Notebook
-                        </p>
-                    </div>
-                    <div class="project-summary">
-                        <p>
-                            This lecture on K-Means Clustering was my final project for MATH 157 at UC San Diego.
-                            <br>
-                            In this lecture, I covered the theory and implementation of K-Means Clustering in Julia, 
-                            <br>
-                            as well as real-world applications such as image compression.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/jo2eph/k_means_lecture" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="GitHub Repo">
-                            GitHub
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Julia</span>
-                        <span class="project-tag">K-Means Clustering</span>
-                        <span class="project-tag">Mathematics</span>
-                        <span class="project-tag">Machine Learning</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 4 -->
-            <div class="project-card">
-                <img src="./assets/placeholder.png" 
-                    alt="Project 4" 
-                    title="Project 4">
-                <div class="project-description-container">
-                    <div class="project-title">
-                        <h3>
-                            Project 4
-                        </h3>
-                    </div>
-                    <div class="project-tools-skills">
-                        <p>
-                            Skills &amp; Tools used
-                        </p>
-                    </div>
-                    <div class="project-summary">
-                        <p>
-                            This is a summary of this project.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a href="" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="GitHub Repo">
-                            GitHub
-                        </a>
-                        <a href="" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="Demo">
-                            Demo
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Tag1</span>
-                        <span class="project-tag">Tag2</span>
-                        <span class="project-tag">Tag3</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 5 -->
-            <div class="project-card">
-                <img src="./assets/placeholder.png" 
-                    alt="Project 5" 
-                    title="Project 5">
-                <div class="project-description-container">
-                    <div class="project-title">
-                        <h3>
-                            Project 5
-                        </h3>
-                    </div>
-                    <div class="project-tools-skills">
-                        <p>
-                            Skills &amp; Tools used
-                        </p>
-                    </div>
-                    <div class="project-summary">
-                        <p>
-                            This is a summary of this project.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a href="" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="GitHub Repo">
-                            GitHub
-                        </a>
-                        <a href="" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="Demo">
-                            Demo
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Tag1</span>
-                        <span class="project-tag">Tag2</span>
-                        <span class="project-tag">Tag3</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 6 -->
-            <div class="project-card">
-                <img src="./assets/placeholder.png" 
-                    alt="Project 6" 
-                    title="Project 6">
-                <div class="project-description-container">
-                    <div class="project-title">
-                        <h3>
-                            Project 6
-                        </h3>
-                    </div>
-                    <div class="project-tools-skills">
-                        <p>
-                            Skills &amp; Tools used
-                        </p>
-                    </div>
-                    <div class="project-summary">
-                        <p>
-                            This is a summary of this project.
-                        </p>
-                    </div>
-                    <div class="project-links">
-                        <a href="" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="GitHub Repo">
-                            GitHub
-                        </a>
-                        <a href="" 
-                            class="project-link"
-                            target="_blank" rel="noopener noreferrer"
-                            title="Demo">
-                            Demo
-                        </a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Tag1</span>
-                        <span class="project-tag">Tag2</span>
-                        <span class="project-tag">Tag3</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <hr>
-
-    <!-- FOOTER 
-     ============================================== -->
+    <!-- FOOTER SECTION -->
     <footer id="footer">
-
-        <div id="footer-left">
-            Personal website by Joseph Lee
-            <br>
-            Hosted on GitHub Pages
-            <br>
-            Click <a href="https://github.com/jo2eph/jo2eph.github.io" title="GitHub Repo">here</a> 
-            for the GitHub repository for this website
-        </div>
-        
-        <div id="footer-right">
-            <ul class="socials">
-                <li>
-                    <a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
-                        title="Send me an email">
-                        <i class="bx bxs-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/jo2eph/" target="_blank"
-                        rel="noopener noreferrer" title="Connect with me on LinkedIn">
-                        <i class="bx bxl-linkedin-square"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
-                        title="Follow me on GitHub">
-                        <i class="bx bxl-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
+        &copy; 2025 Joseph Lee
     </footer>
 
-    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/scrollToTop.js"></script>
     <script src="./scripts/menu.js"></script>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/keyboard.js"></script>
-    <script src="./scripts/theme.js"></script>
 </body>
 </html>

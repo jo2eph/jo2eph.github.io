@@ -1,0 +1,30 @@
+#intro {
+    background-color: var(--main-bg-color);
+    background-image: url("../assets/background.JPG");
+    background-position: center right;
+    background-size: cover;
+    color: var(--main-intro-color);
+    font-family: var(--main-intro-font);
+    height: 82vh;
+    width: 100%;
+}
+
+#intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#intro-content h1 {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+}
+
+#intro-content p {
+    font-size: 1.5em;
+    max-width: 800px;
+}
