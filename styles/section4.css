@@ -1,0 +1,9 @@
+/*
+CSS for Section 4: Projects
+*/
+
+#section-4 {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    padding: 60px 20px;
+}
