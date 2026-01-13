@@ -113,8 +113,9 @@ nav {
     border-bottom: 1px solid #333333;
 }
 #mobile-navbar-center-menu li a {
-    display: block;
     color: rgb(240, 240, 240);
+    display: block;
+    font-size: 18px;
     padding: 10px 20px;
     text-decoration: none;
 }
