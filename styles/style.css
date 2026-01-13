@@ -9,6 +9,7 @@ Main CSS File
     box-sizing: border-box;
 }
 
+/* GLOBAL VARIABLES, THEMES AND STYLES */
 :root {
     /* MAIN THEME */
     --main-intro-color: rgb(210, 210, 210);
@@ -34,4 +35,8 @@ body {
 
 main {
     padding: 0;
+}
+
+.hidden {
+    display: none;
 }

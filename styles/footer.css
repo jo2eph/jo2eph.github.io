@@ -5,7 +5,14 @@ CSS for the footer section
 footer {
     background-color: rgb(34, 34, 34);
     color: rgb(240, 240, 240);
+    font-size: 14px;
+    min-height: 240px;
     padding: 20px 0;
     text-align: center;
-    font-size: 14px;
+}
+
+#footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
