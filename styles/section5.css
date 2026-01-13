@@ -9,12 +9,29 @@ CSS for Section 5: Contact
 }
 
 #contacts-container h2 {
-    text-align: center;
-    margin-bottom: 40px;
     font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
 }
 #contacts-container p {
     font-size: 1.2em;
     margin-bottom: 30px;
     text-align: center;
+}
+
+#contacts-container #email-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: var(--main-text-color);
+    background-color: var(--secondary-bg-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#contacts-container #email-btn:hover {
+    background-color: rgb(76, 139, 160);
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
