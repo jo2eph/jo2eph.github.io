@@ -16,3 +16,22 @@ footer {
     max-width: 1200px;
     padding: 0 20px;
 }
+
+#footer-container #links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#footer-container #links .social-links {
+    color: rgb(240, 240, 240);
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+}
+#footer-container #links .social-links:hover {
+    border-radius: 10px;
+    color: rgb(100, 149, 237);
+    transition: color 0.3s ease;
+}
