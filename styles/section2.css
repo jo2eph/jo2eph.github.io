@@ -8,18 +8,18 @@ CSS for Section 2: Education
     padding: 60px 20px;
 }
 
-#education-container {
+#section-2 div {
     max-width: 900px;
     margin: 0 auto;
 }
 
-#education-container h2 {
+#section-2 h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
 }
 
-#education-container #ucsd-logo {
+#section-2 #ucsd-logo {
     display: block;
     height: 120px;
     margin: 0 auto 30px auto;

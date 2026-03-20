@@ -5,7 +5,7 @@
     background-size: cover;
     color: var(--main-intro-color);
     font-family: var(--main-intro-font);
-    height: 82vh;
+    height: clamp(600px, 95vh, 1000px);
     width: 100%;
 }
 
@@ -18,13 +18,26 @@
     text-align: center;
     padding: 0 20px;
 }
-
 #intro-content h1 {
     font-size: 4.5em;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
-
 #intro-content p {
     font-size: 1.5em;
     max-width: 800px;
+}
+
+#intro #scroll-down {
+    animation: bounce 2s infinite;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 5em;
+    position: absolute;
+    bottom: 70px;
+    text-decoration: none;
+    z-index: 10;
+}
+#intro #scroll-down:hover {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 5.5em;
+    transition: all 0.3s ease-in-out;
 }
