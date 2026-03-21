@@ -23,7 +23,7 @@ CSS for Section 3: Blog
 
 #blog-button {
     background-color: rgba(225, 225, 225, 0.54);
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 6px;
     color: var(--main-text-color);
     display: block;
@@ -37,7 +37,7 @@ CSS for Section 3: Blog
 #blog-button:hover {
     background-color: rgba(40, 40, 40, 0.8);
     color: rgba(244, 244, 244, 0.95);
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: all 0.3s ease;
 }
 
@@ -48,7 +48,7 @@ CSS for Section 3: Blog
     flex-direction: column;
     margin: 40px auto 0 auto;
     padding: 14px;
-    width: clamp(400px, 98%, 1180px);
+    width: clamp(200px, 98%, 1180px);
 }
 #blog-highlight-container h3 {
     font-size: 1.5em;

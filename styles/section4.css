@@ -7,10 +7,38 @@ CSS for Section 4: Projects
     color: var(--secondary-text-color);
     padding: 60px 20px;
 }
-
-
 #section-4 h2 {
-    text-align: center;
-    margin-bottom: 40px;
+    color: var(--secondary-text-color);
     font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#section-4 p {
+    color: var(--secondary-text-color);
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 20px;
+    max-width: 1350px;
+    text-align: center;
+    width: clamp(200px, 92vw, 1200px);
+}
+
+
+@media
+    only screen
+    and (min-width: 768px)
+{
+    #projects-container {
+        width: 80vw;
+    }
 }

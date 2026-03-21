@@ -3,7 +3,7 @@ CSS for Section 2: Education
 */
 
 #section-2 {
-    background-color: rgba(238, 248, 250, 0.8);
+    background-color: rgba(225, 228, 229, 0.8);
     color: var(--secondary-text-color);
     padding: 60px 20px;
 }
