@@ -3,13 +3,16 @@ CSS for Section 2: Education
 */
 
 #section-2 {
-    background-color: var(--secondary-bg-color);
+    background-color: rgba(218, 222, 223, 0.8);
+    background-image: url('../assets/geisel.JPG');
+    background-position: center right;
+    background-blend-mode: overlay;
     color: var(--secondary-text-color);
     padding: 60px 20px;
 }
 
 #section-2 div {
-    max-width: 900px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -24,4 +27,110 @@ CSS for Section 2: Education
     height: 120px;
     margin: 0 auto 30px auto;
     object-fit: contain;
+    text-align: center;
+}
+
+/* Education Container */
+#section-2 #education-container {
+    background-color: rgba(231, 237, 252, 0.9);
+    border: 1px solid rgba(65, 65, 65, 0.35);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+#education-container h3,
+#skills-container h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+#education-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(65, 65, 65, 0.28);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 20px;
+}
+
+#skills-left-section {
+    border-right: 1px solid rgba(65, 65, 65, 0.27);
+    flex-basis: 55%;
+    padding: 20px;
+    margin: 12px;
+}
+#skills-left-section h4 {
+    font-size: 1.2em;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+#skills-right-section {
+    flex-basis: 45%;
+    padding: 20px;
+    margin: 12px;
+}
+
+#education-container .course,
+#education-container .activity,
+#skills-container .skill {
+    border: 1px solid rgba(65, 65, 65, 0.135);
+    border-radius: 8px;
+    color: var(--secondary-text-color);
+    display: inline-block;
+    margin: 4px;
+    margin-left: 6px;
+    padding: 6px 12px;
+}
+.activity {
+    background-color: rgba(202, 232, 255, 0.87);
+}
+.course {
+    background-color: rgba(250, 237, 201, 0.87);
+}
+.skill {
+    background-color: rgba(235, 250, 247, 0.6);
+}
+
+.tech-skill {
+    display: inline-block;
+    margin: 8px;
+    text-align: center;
+}
+
+.skill-icon {
+    margin: 12px 8px;
+    height: clamp(40px, 10vw, 90px);
+    width: auto;
+}
+.skill-icon:hover {
+    transform: scale(1.18);
+    transition: all ease 0.35s;
+}
+
+#education-container .course:hover, 
+#education-container .activity:hover,
+#skills-container .skill:hover {
+    background-color: rgba(40, 40, 40, 0.9);
+    color: rgb(230, 230, 230);
+    transform: scale(1.1);
+    transition: all ease 0.35s;
+}
+
+
+@media
+    only screen
+    and (min-width: 768px)
+{
+    #section-2 #skills-container {
+        flex-direction: row;
+    }
 }
