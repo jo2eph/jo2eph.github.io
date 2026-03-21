@@ -3,10 +3,7 @@ CSS for Section 2: Education
 */
 
 #section-2 {
-    background-color: rgba(218, 222, 223, 0.8);
-    background-image: url('../assets/geisel.JPG');
-    background-position: center right;
-    background-blend-mode: overlay;
+    background-color: rgba(238, 248, 250, 0.8);
     color: var(--secondary-text-color);
     padding: 60px 20px;
 }
@@ -62,7 +59,7 @@ CSS for Section 2: Education
 }
 
 #skills-left-section {
-    border-right: 1px solid rgba(65, 65, 65, 0.27);
+    border-bottom: 1px solid rgba(65, 65, 65, 0.27);
     flex-basis: 55%;
     padding: 20px;
     margin: 12px;
@@ -107,9 +104,8 @@ CSS for Section 2: Education
 }
 
 .skill-icon {
-    margin: 12px 8px;
-    height: clamp(40px, 10vw, 90px);
-    width: auto;
+    margin: 12px 6px;
+    height: clamp(30px, 10vw, 100px);
 }
 .skill-icon:hover {
     transform: scale(1.18);
@@ -130,7 +126,18 @@ CSS for Section 2: Education
     only screen
     and (min-width: 768px)
 {
+    #section-2 {
+        background-image: url('../assets/geisel.JPG');
+        background-position: center right;
+        background-blend-mode: overlay;
+    }
+
     #section-2 #skills-container {
         flex-direction: row;
+    }
+
+    #skills-left-section {
+        border-bottom: none;
+        border-right: 1px solid rgba(65, 65, 65, 0.27);
     }
 }
