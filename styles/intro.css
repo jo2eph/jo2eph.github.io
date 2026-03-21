@@ -5,7 +5,7 @@
     background-size: cover;
     color: var(--main-intro-color);
     font-family: var(--main-intro-font);
-    height: clamp(600px, 95vh, 1000px);
+    height: clamp(600px, 93vh, 1000px);
     width: 100%;
 }
 
