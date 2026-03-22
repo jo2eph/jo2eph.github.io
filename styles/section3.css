@@ -41,25 +41,106 @@ CSS for Section 3: Blog
     transition: all 0.3s ease;
 }
 
-#blog-highlight-container {
+#blog-container {
     border: 1px solid rgba(70, 70, 70, 0.25);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     margin: 40px auto 0 auto;
     padding: 14px;
-    width: clamp(200px, 98%, 1180px);
+    width: clamp(200px, 98%, 1240px);
 }
-#blog-highlight-container h3 {
+#blog-container h3 {
     font-size: 1.5em;
     margin: 0 auto;
+    margin-bottom: 18px;
+    margin-top: 12px;
     text-align: center;
 }
 
+#blog-highlight-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#blog-container .blog {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid rgba(70, 70, 70, 0.65);
+    border-radius: 4px;
+    flex-basis: 90%;
+    padding: 24px 18px;
+    margin: 12px auto;
+    width: clamp(140px, 100%, 560px);
+}
+#blog-container .blog:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+#blog-container .blog .blog-image {
+    border: 1px solid rgba(42, 42, 42, 0.4);
+    margin: 0 auto;
+    height: clamp(80px, 100%, 240px);
+    width: clamp(120px, 100%, 640px);
+}
+#blog-container .blog h4 {
+    color: var(--main-text-color);
+    font-size: 1.4em;
+    margin: 16px 0 8px 0;
+}
+#blog-container .blog h4:hover {
+    color: rgba(27, 27, 27,0.75);
+    text-decoration: underline;
+}
+
+#blog-container .blog a {
+    text-decoration: none;
+}
+#blog-container .blog .blog-description {
+    color: rgba(27, 27, 27, 0.85);
+    font-size: 0.84em;
+    text-align: left !important;
+}
+#blog-container .blog .author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#blog-container .blog .author img {
+    border: 1px solid rgba(42, 42, 42, 0.78);
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-right: 12px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+#blog-container .author-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+#blog-container .author-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#blog-container .blog-date {
+    font-size: 0.85em;
+    color: rgba(35, 35, 35, 0.8);
+}
 
 @media
     only screen
-    and (min-width: 768px) 
+    and (min-width: 1240px) 
 {
+    #blog-highlight-container {
+        flex-direction: row;
+    }
 
+    #blog-container .blog {
+        flex-basis: 30%;
+        max-width: 400px;
+    }
 }
