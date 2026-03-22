@@ -116,6 +116,7 @@ CSS for Section 2: Education
 #education-container .activity:hover,
 #skills-container .skill:hover {
     background-color: rgba(40, 40, 40, 0.9);
+    box-shadow: 0 4px 8px rgba(25, 25, 25, 0.56);
     color: rgb(230, 230, 230);
     transform: scale(1.1);
     transition: all ease 0.35s;
