@@ -5,7 +5,7 @@ CSS for Section 4: Projects
 #section-4 {
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
-    padding: 60px 20px;
+    padding: 60px 8px;
 }
 #section-4 h2 {
     color: var(--secondary-text-color);
@@ -23,22 +23,96 @@ CSS for Section 4: Projects
 }
 
 #projects-container {
+    background-color: rgba(150, 150, 150, 0.1);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 16px;
-    padding: 20px;
-    max-width: 1350px;
+    margin-top: 20px;
+    padding: 12px;
+    max-width: 1400px;
     text-align: center;
-    width: clamp(200px, 92vw, 1200px);
+    width: clamp(160px, 94vw, 1200px);
+}
+
+.project {
+    background-color: rgba(250, 250, 250, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(36, 36, 36, 0.27);
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 12px;
+    max-width: 560px;
+    transition: all 0.3s linear;
+}
+.project:hover {
+    transform: scale(1.08);
+    transition: all 0.3s ease-in-out;
+}
+.project-image img {
+    border: 1px solid rgba(50, 50, 50, 0.15);
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project-title {
+    color: rgba(36, 36, 36, 0.95);
+    font-size: 1.2em;
+    margin-top: 12px;
+}
+.project-description {
+    color: rgba(64, 64, 64, 0.68);
+    font-size: 0.9em;
+    margin-top: 14px;
+}
+.project-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+.project-links a {
+    border: 1px solid rgba(70, 70, 70, 0.76);
+    border-radius: 6px;
+    color: var(--main-text-color);
+    font-size: 1em;
+    margin: 0 10px;
+    padding: 8px 45px;
+    transition: all 0.35s linear;
+    text-decoration: none;
+}
+.project-links a:hover {
+    background-color: rgba(70, 70, 70, 0.76);
+    color: rgba(248, 248, 248, 0.95);
+    transition: all 0.3s ease-in-out;
 }
 
 
+/* Display two projects on medium-sized screens */
 @media
     only screen
-    and (min-width: 768px)
+    and (min-width: 650px)
 {
     #projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 80vw;
+    }
+
+    .project {
+        flex-basis: 45%;
+    }
+}
+
+
+/* Display three projects on large screens */
+@media
+    only screen
+    and (min-width: 1100px)
+{
+    .project {
+        flex-basis: 30%;
     }
 }

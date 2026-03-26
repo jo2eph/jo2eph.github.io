@@ -13,6 +13,7 @@
     right: 20px;
     align-items: center;
     justify-content: center;
+    transition: all 0.35s linear;
     width: 50px;
     z-index: 1000;
 }

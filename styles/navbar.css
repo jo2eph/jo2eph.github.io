@@ -54,12 +54,13 @@ nav {
     color: white;
     padding: 8px 12px;
     text-decoration: none;
+    transition: all 0.35s linear;
 }
 #navbar-center-menu li a:hover {
     background-color: #333333;
     border-radius: 5px;
     color: #c5c5c5;
-    padding: 5px 10px;
+    padding: 8px 12px;
     transition: all 0.3s ease;
 }
 
@@ -132,6 +133,7 @@ nav {
     font-size: 28px;
     margin: 10px 15px;
     text-decoration: none;
+    transition: all 0.35s linear;
 }
 #mobile-navbar-socials
 .social-links:hover {

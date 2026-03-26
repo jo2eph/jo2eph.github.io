@@ -31,6 +31,7 @@ CSS for Section 5: Contact
     width: fit-content;
     padding: 12px 48px;
     text-decoration: none;
+    transition: all 0.35s linear;
 }
 #contacts-container #contact-button:hover {
     background-color: rgb(10, 117, 152);
@@ -63,6 +64,7 @@ CSS for Section 5: Contact
     padding: 4px 10px;
     text-align: center;
     text-decoration: none;
+    transition: all 0.35s linear;
 }
 #platforms-container a:hover {
     background-color: rgb(10, 117, 152);
