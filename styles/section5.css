@@ -34,7 +34,7 @@ CSS for Section 5: Contact
     transition: all 0.35s linear;
 }
 #contacts-container #contact-button:hover {
-    background-color: rgb(10, 117, 152);
+    background-color: rgb(34, 152, 231);
     color: rgb(235, 235, 235);
     cursor: pointer;
     transform: scale(1.15);

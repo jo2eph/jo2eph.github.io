@@ -40,3 +40,12 @@ main {
 .hidden {
     display: none;
 }
+
+.code {
+    background-color: rgba(200, 200, 200, 0.2);
+    border: 1px solid rgba(150, 150, 150, 0.3);
+    border-radius: 6px;
+    color: var(--main-text-color);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 4px 6px;
+}

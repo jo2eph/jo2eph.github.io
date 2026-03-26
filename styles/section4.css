@@ -67,6 +67,8 @@ CSS for Section 4: Projects
     color: rgba(64, 64, 64, 0.68);
     font-size: 0.9em;
     margin-top: 14px;
+    padding: 0px 8px;
+    text-align: left;
 }
 .project-links {
     display: flex;
@@ -88,6 +90,20 @@ CSS for Section 4: Projects
     background-color: rgba(70, 70, 70, 0.76);
     color: rgba(248, 248, 248, 0.95);
     transition: all 0.3s ease-in-out;
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.tag {
+    background-color: rgba(100, 100, 100, 0.14);
+    border-radius: 6px;
+    color: rgba(43, 43, 43, 0.53);
+    font-size: 0.78em;
+    padding: 4px 12px;
+    margin: 4px;
 }
 
 
