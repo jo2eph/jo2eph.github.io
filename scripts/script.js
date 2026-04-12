@@ -6,3 +6,5 @@ scrollDown.addEventListener('click', () => {
         {behavior: "smooth"}
     )
 })
+
+

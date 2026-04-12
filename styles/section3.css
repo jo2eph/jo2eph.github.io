@@ -82,6 +82,7 @@ CSS for Section 3: Blog
 }
 
 #blog-container .blog .blog-image {
+    aspect-ratio: 3 / 2;
     border: 1px solid rgba(42, 42, 42, 0.287);
     margin: 0 auto;
     height: clamp(80px, 100%, 240px);
