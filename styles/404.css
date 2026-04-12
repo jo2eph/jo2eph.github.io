@@ -1,0 +1,49 @@
+/* CSS solely for 404 page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#error_message h1 {
+    color: #333;
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#error_message p {
+    color: #666;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#link {
+    background-color: #ecfaff;
+    border: 1px solid #001e3d7f;
+    border-radius: 8px;
+    color: rgba(40, 40, 40, 0.97);
+    font-size: 1.2em;
+    padding: 12px 36px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+#link:hover {
+    background-color: rgb(82, 146, 201);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: rgb(250, 250, 250);
+    padding: 12px 60px;
+    transform: scale(1.03);
+    transition: 0.3s all ease-in;
+}
