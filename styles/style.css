@@ -27,7 +27,7 @@ html {
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--cherry-bg-color);
+    background-color: rgb(34, 34, 34);
     color: var(--main-text-color);
     line-height: 1.6;
     overflow-x: hidden;
