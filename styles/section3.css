@@ -43,7 +43,7 @@ CSS for Section 3: Blog
 }
 
 #blog-container {
-    border: 1px solid rgba(70, 70, 70, 0.25);
+    border: 1px solid rgba(157, 157, 157, 0.25);
     border-radius: 8px;
     display: flex;
     flex-direction: column;

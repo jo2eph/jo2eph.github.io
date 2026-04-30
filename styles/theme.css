@@ -1,0 +1,17 @@
+#theme {
+    color: var(--main-text-color);
+    display: flex;
+    font-size: 3em;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+#theme #theme-button {
+    border-radius: 6px;
+    color: var(--main-text-color);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.35s linear;
+}
